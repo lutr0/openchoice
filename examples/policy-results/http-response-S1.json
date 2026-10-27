@@ -1,0 +1,21 @@
+{
+  "model": "openchoice-gguf-6b9b4d1ff8c1002d-q4km",
+  "answers": {
+    "route": {
+      "type": "choice",
+      "choice": "revenue",
+      "confidence": 0.9999719369096881,
+      "probabilities": {
+        "revenue": 0.9999789526822661,
+        "identity": 1.1618595748194747e-05,
+        "reliability": 5.1172818731311655e-06,
+        "developer": 4.311440112464763e-06
+      }
+    }
+  },
+  "usage": {
+    "billing_units": 0,
+    "input_tokens": 129,
+    "output_tokens": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "openchoice-finetune-verification-v1",
+  "dataset_license": "Apache-2.0; self-authored examples, no external dataset rows copied",
+  "unit_command": "uv run --group train python -m unittest discover -s tests -p test_finetune.py",
+  "unit_tests_passed": 10,
+  "validation_report": "validate.json",
+  "training_report": "train-report.json",
+  "paired_eval_report": "eval.json",
+  "qlora_report": "qlora-report.json",
+  "qlora_long_text_and_image_backward": "memory-boundary.json",
+  "fresh_base_one_update": "base-smoke.json",
+  "actual_token_limit_rejection": "token-limit.json",
+  "resume_report": "resume-report.json",
+  "resume_from_update": 15,
+  "resume_to_update": 30,
+  "uninterrupted_adapter_sha256": "fcbdcb46e91c69f93a1432b679e29db022875aeb35e15632c348e8df91d86953",
+  "resumed_adapter_sha256": "fcbdcb46e91c69f93a1432b679e29db022875aeb35e15632c348e8df91d86953",
+  "export_parity_report": "parity.json",
+  "http_request": "http-request.json",
+  "http_response": "http-response.json",
+  "http_transport": "curl --fail-with-body through a local SSH tunnel to the public server on remote loopback port 8769; production port 8768 untouched",
+  "physical_gpu_tested": "NVIDIA RTX 6000 Ada Generation, 48 GB",
+  "limitations": [
+    "Only the 48 GB GPU was physically tested. Recommendations for 24 GB derive from measured allocations.",
+    "Short templated tutorial examples repeat message templates across splits. Accuracy was already perfect before training.",
+    "The authored 24-row retention panel is a smoke check, not general capability certification.",
+    "A 3641-token and a small-image QLoRA backward were exercised, not every possible 4096-token/image configuration.",
+    "The end-to-end GGUF export used the BF16-LoRA adaptation; QLoRA was verified through backward, optimizer updates and portable checkpoint save.",
+    "The tutorial probabilities are uncalibrated; no broad benchmark claim follows from their sharpening."
+  ]
+}

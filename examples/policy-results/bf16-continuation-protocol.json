@@ -1,0 +1,6 @@
+{
+  "reason": "At150 BF16 updates, recent training losses remain approximately0.42–0.62 (last0.47437). The endpoint remains underfit:38/64 DEV correct. Q4 gives35/64 and53/64 agreement, below the unchanged90% export gate.",
+  "action": "Resume the exact optimizer/RNG/data contract from BF16 update150 to total300 updates. Keep learning rate0.00005, batch8, replay0.2, seed42, labels, prompts and splits unchanged.",
+  "selection": "Evaluate the final300-update endpoint once and export all64 DEV rows. No per-row label/prompt editing, threshold reduction or checkpoint search.",
+  "interpretation": "This is an exploratory DEV tutorial, with documented recipe iteration, not a blind final benchmark. The failed150-update BF16 and QLoRA results remain alongside the final receipts."
+}

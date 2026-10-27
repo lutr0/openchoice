@@ -1,0 +1,38 @@
+{
+  "schema_version": "openchoice-release-verification-v1",
+  "date": "2026-09-29",
+  "platform": "Linux x86_64",
+  "source": "Fresh copied source tree, no pre-existing virtual environment or runtime build; final runtime module refreshed before startup after model-identity-only change",
+  "package": "Locally staged OpenChoice-9B GGUF package; actual Hub download unavailable because the publisher has not published it",
+  "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+  "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+  "projector_sha256": "44c7ddca015a856956bbf2ff4a88049a4bc1dcff47fabd93602f23554d307e0c",
+  "checks": {
+    "uv_sync_cpu_environment": "passed; no Torch/PEFT/bitsandbytes installed",
+    "build": "BUILD_JOBS=2 nice -n 19 bash scripts/build_llamacpp.sh cpu; passed with fresh upstream clone at the pinned commit",
+    "launch": "CUDA_VISIBLE_DEVICES= nice -n 19 uv run python -m openchoice.server --model ./OpenChoice-9B-GGUF --threads 2 --port 18778; reached Uvicorn running",
+    "health": {"status_code": 200, "body": {"status": "ok"}},
+    "readme_request": {
+      "status_code": 200,
+      "choice_billing_probability": 0.9991317650832606,
+      "score_refund_probability": 0.9951075304709086,
+      "noul_duplicate_charge_probability": 0.9941819383148884,
+      "input_tokens": 227,
+      "output_tokens": 0
+    },
+    "api_and_integrity_contract_tests": {"tests": 10, "passed": true},
+    "official_sdk": {"version": "0.6.0", "passed": true, "report": "gguf-clean-sdk-smoke.json"},
+    "cpu_vision": {"passed": true, "report": "gguf-clean-vision-smoke.json"},
+    "final_minimal_serving_dependencies": {"passed": true, "report": "gguf-minimal-dependencies-smoke.json", "scope": "After moving Pillow to train-only, an actual CPU chart decision in the final base environment reproduced archived GGUF probabilities exactly with neither Torch nor Pillow installed"},
+    "hf_download_cli": "Command help resolves in the Torch-free serving environment",
+    "package_integrity": "Every manifest-listed file hash verified by clean engine startup; corrupt/escaping artifact cases rejected in contract tests",
+    "targeted_secret_privacy_scan": "No matches in public release text or HF package text for private home/media paths, private instance/checkpoint IDs, known HF/OpenAI token shapes, or private-key headers"
+  },
+  "not_verified": [
+    "Public Git clone and Hub package download: repositories are publisher-owned and not published by this preparation; local staged package substituted",
+    "New public CUDA build/offload: shared GPU lacked admission headroom; prior pinned production GPU measurements are retained separately",
+    "macOS, Windows, WSL, Apple Metal, and AMD GPU paths",
+    "Broad image/OCR/video quality; acceptance used two known chart rows, not a new vision benchmark"
+  ],
+  "safety": "Production judge on port 8768 was not stopped, restarted, or reconfigured. Acceptance used separate ports; the verification-only server was stopped after checks. No publish/upload/push/commit actions were performed."
+}

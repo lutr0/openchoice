@@ -1,0 +1,530 @@
+{
+  "schema_version": "openchoice-container-verification-v1",
+  "verified_on": "2026-09-29",
+  "status": "amd64_e2e_verified_arm64_emulation_limited",
+  "platforms_built": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
+  "platforms_run": [
+    {
+      "platform": "linux/amd64",
+      "execution": "native Linux x86-64"
+    },
+    {
+      "platform": "linux/arm64",
+      "execution": "QEMU 10.2.2 on Linux x86-64 only"
+    }
+  ],
+  "not_verified": [
+    "Apple Silicon or other native arm64 hardware",
+    "macOS/Windows Docker Desktop host integration",
+    "CUDA container (not provided; nvcc unavailable)",
+    "Full Hub package download (release repository not yet published)"
+  ],
+  "host": {
+    "cpu": "AMD Ryzen 9 7900X3D",
+    "ram_gib": 61,
+    "architecture": "x86_64",
+    "docker": "29.8.1",
+    "buildx": "0.37.1",
+    "qemu": "10.2.2"
+  },
+  "measurement_scope": "Sequential CPU-only jobs at nice 10; shared host and warm filesystem caches. Startup is launch-to-first-health-200, sampled at one-second intervals. These are not cold-start guarantees or Apple Silicon speed measurements. Test ports replace README port 8768 because the production judge was left untouched.",
+  "llama_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+  "model_files_sha256": {
+    "openchoice-Q4_K_M.gguf": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+    "mmproj-q8_0.gguf": "44c7ddca015a856956bbf2ff4a88049a4bc1dcff47fabd93602f23554d307e0c",
+    "model.json": "aa213bc63731468ed89e993b1840e1859725c854d4ea9fb6e74544403a1efc0f",
+    "processor/chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "processor/config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+    "processor/processor_config.json": "bfbc24af59a3e73a9cd0653b8d4ae758dfaec4e3e6c15dfb1c6c8ee8d5683c85",
+    "processor/tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "processor/tokenizer_config.json": "09564f0b57b433b55d536630be3044b4183dbe04d0cbc7b1e9b1154db3671b0b",
+    "adapter/README.md": "4e6784385d9fb97d6442c6338f603c62d35d9d94406152ff96aad8385c354426",
+    "adapter/adapter_config.json": "785be308d2b81bda7b66880a05b8a45b203510e23a6383bfb7531cd2fbf5b326",
+    "adapter/adapter_model.safetensors": "1d44ed76145d99ad8ee50f3b3c20a7aca965a6890f8a45fbf8fbf683ca23ec80",
+    "heads.safetensors": "9bbcbf73561f6bc5d0a17ea6a2081feed2d1304e87602d8c502d9a5c4bd85576"
+  },
+  "portable_build": {
+    "GGML_NATIVE": false,
+    "GGML_BACKEND_DL": true,
+    "GGML_CPU_ALL_VARIANTS": true,
+    "GGML_CUDA": false,
+    "GGML_BACKEND_DIR": "/app/.runtime/llama.cpp/build-cpu/bin",
+    "compiler": "GNU 14.2.0",
+    "python": "3.12.14",
+    "uv": "0.9.26"
+  },
+  "native_comparison": {
+    "GGML_NATIVE": true,
+    "GGML_BACKEND_DL": false,
+    "GGML_CPU_ALL_VARIANTS": false,
+    "compiler": "GNU 16.2.1",
+    "startup_to_health_seconds": 7.015353378999862,
+    "readme_request_seconds": 1.6107930159923853,
+    "readme_response": {
+      "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+      "answers": {
+        "topic": {
+          "type": "choice",
+          "choice": "billing",
+          "confidence": 0.9982635301665213,
+          "probabilities": {
+            "billing": 0.9991317650832606,
+            "weather": 0.0008682349167394306
+          }
+        },
+        "severity": {
+          "type": "score",
+          "score": 0.9951075304709086,
+          "confidence": 0.9902150609418173,
+          "legend": {
+            "0": "No payment problem",
+            "1": "A duplicate charge requiring a refund"
+          },
+          "probabilities": {
+            "0": 0.004892469529091323,
+            "1": 0.9951075304709086
+          }
+        },
+        "duplicate": {
+          "type": "noul",
+          "noul": 0.9941819383148884
+        }
+      },
+      "usage": {
+        "billing_units": 0,
+        "input_tokens": 227,
+        "output_tokens": 0
+      }
+    }
+  },
+  "probability_difference_explanation": "The same verified weights, pinned llama.cpp commit and exact-logit bridge were used. Container kernels use runtime-dispatched CPU variants (Zen 4 on amd64) compiled with GCC 14.2, versus the native GGML_NATIVE=ON build compiled with GCC 16.2. These floating-point implementations are not bit-identical. [INFERENCE] The observed numerical differences arise from kernel/compiler differences; their individual contributions were not isolated. No quantization or input change was made.",
+  "readme_payload": {
+    "model": "openchoice-latest",
+    "state": "My card was charged twice. Please refund the duplicate payment.",
+    "questions": {
+      "topic": {
+        "type": "choice",
+        "instructions": "Classify the message.",
+        "criteria": {
+          "billing": "Billing and refunds",
+          "weather": "Weather forecast"
+        }
+      },
+      "severity": {
+        "type": "score",
+        "instructions": "Rate the payment problem.",
+        "criteria": [
+          "No payment problem",
+          "A duplicate charge requiring a refund"
+        ]
+      },
+      "duplicate": {
+        "type": "noul",
+        "instructions": "Was the customer charged twice?"
+      }
+    }
+  },
+  "runs": [
+    {
+      "platform": "linux/amd64",
+      "mode": "native x86-64 Linux",
+      "image_id": "sha256:aca434a47badc315afa1b7c51f4ea19610fa368e768d95128736a5dbbe7e3ce1",
+      "image_digest": "sha256:aca434a47badc315afa1b7c51f4ea19610fa368e768d95128736a5dbbe7e3ce1",
+      "digest_kind": "local Docker image/config SHA-256; no registry manifest was published",
+      "size_bytes": 369835163,
+      "size_mib": 352.70229625701904,
+      "base_images": [
+        {
+          "uri": "pkg:docker/docker/dockerfile@1",
+          "digest": {
+            "sha256": "ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32"
+          }
+        },
+        {
+          "uri": "pkg:docker/python@3.12-slim-trixie?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@0.9.26?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "9a23023be68b2ed09750ae636228e903a54a05ea56ed03a934d00fe9fbeded4b"
+          }
+        }
+      ],
+      "health_http_status": 200,
+      "docker_healthcheck": "healthy",
+      "startup_to_health_seconds": 7.391863581011421,
+      "readme_request_seconds": 1.6045908960077213,
+      "readme_response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.9980933361976017,
+            "probabilities": {
+              "billing": 0.9990466680988008,
+              "weather": 0.0009533319011990833
+            }
+          },
+          "severity": {
+            "type": "score",
+            "score": 0.9963673147657818,
+            "confidence": 0.9927346295315637,
+            "legend": {
+              "0": "No payment problem",
+              "1": "A duplicate charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.003632685234218177,
+              "1": 0.9963673147657818
+            }
+          },
+          "duplicate": {
+            "type": "noul",
+            "noul": 0.9949575077462216
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 227,
+          "output_tokens": 0
+        }
+      },
+      "default_image_user": "10001:10001",
+      "verification_user": "1000:1000",
+      "model_mount_readonly": true,
+      "gpu_device_requests": null,
+      "host_port_binding": {
+        "8768/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8781"
+          }
+        ]
+      },
+      "selected_cpu_backend": [
+        "/app/.runtime/llama.cpp/build-cpu/bin/libggml-cpu-zen4.so"
+      ],
+      "threads": 12,
+      "nice": 10,
+      "sdk": {
+        "report": "results/container-sdk-amd64.json",
+        "version": "0.6.0",
+        "passed": true,
+        "case_count": 34,
+        "unchecked": [],
+        "total_seconds": 37.50241415400524
+      },
+      "comparison_to_native": {
+        "signed_probability_deltas": {
+          "topic.billing": -0.00008509698445979819,
+          "topic.weather": 0.00008509698445965269,
+          "severity.0": -0.0012597842948731458,
+          "severity.1": 0.0012597842948731675,
+          "duplicate.noul": 0.0007755694313331674
+        },
+        "max_absolute_probability_delta": 0.0012597842948731675,
+        "same_choice": true
+      }
+    },
+    {
+      "platform": "linux/arm64",
+      "mode": "QEMU user-mode on x86-64 Linux",
+      "image_id": "sha256:2a3b34908a8aa9b3a75635d614f2db2d4f512fa3094f40b3b904b600975ac3cb",
+      "image_digest": "sha256:2a3b34908a8aa9b3a75635d614f2db2d4f512fa3094f40b3b904b600975ac3cb",
+      "digest_kind": "local Docker image/config SHA-256; no registry manifest was published",
+      "size_bytes": 364983092,
+      "size_mib": 348.07500076293945,
+      "base_images": [
+        {
+          "uri": "pkg:docker/docker/dockerfile@1",
+          "digest": {
+            "sha256": "ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32"
+          }
+        },
+        {
+          "uri": "pkg:docker/python@3.12-slim-trixie?platform=linux%2Farm64",
+          "digest": {
+            "sha256": "f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@0.9.26?platform=linux%2Farm64",
+          "digest": {
+            "sha256": "9a23023be68b2ed09750ae636228e903a54a05ea56ed03a934d00fe9fbeded4b"
+          }
+        }
+      ],
+      "health_http_status": 200,
+      "docker_healthcheck": "healthy",
+      "startup_to_health_seconds": 228.0261789829965,
+      "readme_request_seconds": 535.2148722410057,
+      "readme_response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.9978655002410051,
+            "probabilities": {
+              "billing": 0.9989327501205025,
+              "weather": 0.001067249879497415
+            }
+          },
+          "severity": {
+            "type": "score",
+            "score": 0.9958549653477865,
+            "confidence": 0.9917099306955729,
+            "legend": {
+              "0": "No payment problem",
+              "1": "A duplicate charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.004145034652213528,
+              "1": 0.9958549653477865
+            }
+          },
+          "duplicate": {
+            "type": "noul",
+            "noul": 0.9939702026164707
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 227,
+          "output_tokens": 0
+        }
+      },
+      "default_image_user": "10001:10001",
+      "verification_user": "1000:1000",
+      "model_mount_readonly": true,
+      "gpu_device_requests": null,
+      "host_port_binding": {
+        "8768/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8782"
+          }
+        ]
+      },
+      "selected_cpu_backend": [
+        "/app/.runtime/llama.cpp/build-cpu/bin/libggml-cpu-armv9.2_2.so"
+      ],
+      "threads": 12,
+      "nice": 10,
+      "sdk": {
+        "report": "results/container-sdk-arm64.json",
+        "version": "0.6.0",
+        "passed": false,
+        "case_count": 1,
+        "unchecked": [],
+        "total_seconds": 180.13343633800105,
+        "failure": {
+          "type": "TypeSafeAPITimeoutError",
+          "message": "Request timed out (timeout=180)."
+        }
+      },
+      "comparison_to_native": {
+        "signed_probability_deltas": {
+          "topic.billing": -0.00019901496275809283,
+          "topic.weather": 0.0001990149627579843,
+          "severity.0": -0.0007474348768777951,
+          "severity.1": 0.0007474348768778949,
+          "duplicate.noul": -0.00021173569841770323
+        },
+        "max_absolute_probability_delta": 0.0007474348768778949,
+        "same_choice": true
+      },
+      "qemu_cpu": "default (SVE/SME capable)"
+    },
+    {
+      "platform": "linux/arm64",
+      "mode": "QEMU user-mode on x86-64 Linux",
+      "image_id": "sha256:2a3b34908a8aa9b3a75635d614f2db2d4f512fa3094f40b3b904b600975ac3cb",
+      "image_digest": "sha256:2a3b34908a8aa9b3a75635d614f2db2d4f512fa3094f40b3b904b600975ac3cb",
+      "digest_kind": "local Docker image/config SHA-256; no registry manifest was published",
+      "size_bytes": 364983092,
+      "size_mib": 348.07500076293945,
+      "base_images": [
+        {
+          "uri": "pkg:docker/docker/dockerfile@1",
+          "digest": {
+            "sha256": "ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32"
+          }
+        },
+        {
+          "uri": "pkg:docker/python@3.12-slim-trixie?platform=linux%2Farm64",
+          "digest": {
+            "sha256": "f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@0.9.26?platform=linux%2Farm64",
+          "digest": {
+            "sha256": "9a23023be68b2ed09750ae636228e903a54a05ea56ed03a934d00fe9fbeded4b"
+          }
+        }
+      ],
+      "health_http_status": 200,
+      "docker_healthcheck": "healthy",
+      "startup_to_health_seconds": 109.69197426000028,
+      "readme_request_seconds": 134.83142988898908,
+      "readme_response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.9983049912867614,
+            "probabilities": {
+              "billing": 0.9991524956433807,
+              "weather": 0.0008475043566194016
+            }
+          },
+          "severity": {
+            "type": "score",
+            "score": 0.9935039622016065,
+            "confidence": 0.9870079244032129,
+            "legend": {
+              "0": "No payment problem",
+              "1": "A duplicate charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.006496037798393542,
+              "1": 0.9935039622016065
+            }
+          },
+          "duplicate": {
+            "type": "noul",
+            "noul": 0.9940227872718056
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 227,
+          "output_tokens": 0
+        }
+      },
+      "default_image_user": "10001:10001",
+      "verification_user": "1000:1000",
+      "model_mount_readonly": true,
+      "gpu_device_requests": null,
+      "host_port_binding": {
+        "8768/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8782"
+          }
+        ]
+      },
+      "selected_cpu_backend": [
+        "/app/.runtime/llama.cpp/build-cpu/bin/libggml-cpu-armv8.2_2.so"
+      ],
+      "threads": 12,
+      "nice": 10,
+      "sdk": {
+        "report": "results/container-sdk-arm64-cortex-a76.json",
+        "version": "0.6.0",
+        "passed": false,
+        "case_count": 1,
+        "unchecked": [],
+        "total_seconds": 180.04962869099109,
+        "failure": {
+          "type": "TypeSafeAPITimeoutError",
+          "message": "Request timed out (timeout=180)."
+        }
+      },
+      "comparison_to_native": {
+        "signed_probability_deltas": {
+          "topic.billing": 0.000020730560120085784,
+          "topic.weather": -0.00002073056012002908,
+          "severity.0": 0.001603568269302219,
+          "severity.1": -0.0016035682693020803,
+          "duplicate.noul": -0.00015915104308283912
+        },
+        "max_absolute_probability_delta": 0.001603568269302219,
+        "same_choice": true
+      },
+      "qemu_cpu": "cortex-a76"
+    }
+  ],
+  "mount_note": "The staged package includes a mode-0600 hardlinked adapter. UID 10001 was denied access in the initial startup attempt; verification used the documented --user 1000:1000 override without changing any model permissions or bytes. Default UID 10001 was separately checked with the downloader and a named volume.",
+  "entrypoint_checks": {
+    "no_key_rejected": {
+      "exit_code": 2,
+      "message": "Non-loopback binding requires OPENCHOICE_API_KEY"
+    },
+    "default_uid": 10001,
+    "default_gid": 10001,
+    "absent_runtime_packages": [
+      "torch",
+      "peft",
+      "bitsandbytes"
+    ],
+    "absent_runtime_commands": [
+      "cmake",
+      "c++"
+    ],
+    "download": {
+      "passed": true,
+      "user": 10001,
+      "mount": "temporary named volume, removed after verification",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "file": "tokenizer_config.json",
+      "size_bytes": 16710,
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "scope": "Actual small upstream download through the image helper, not the unpublished OpenChoice package"
+    }
+  },
+  "dispatch_checks": [
+    {
+      "cpu": "native Ryzen Zen 4",
+      "backend": "libggml-cpu-zen4.so",
+      "devices": 1,
+      "gpu": false
+    },
+    {
+      "cpu": "QEMU x86-64 Nehalem (no AVX)",
+      "backend": "libggml-cpu-sse42.so",
+      "devices": 1,
+      "gpu": false,
+      "scope": "Backend loading only; no model inference"
+    },
+    {
+      "cpu": "QEMU arm64 Cortex-A76",
+      "backend": "libggml-cpu-armv8.2_2.so",
+      "devices": 1,
+      "gpu": false,
+      "scope": "Backend loading"
+    }
+  ],
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "uploaded": false,
+    "registry_manifest_digest": null
+  },
+  "build_input_sha256": {
+    "Dockerfile": "19012c7b50e95085133d8c27353f70c4302ec20d6c0a65a2d2f7c33ca9f60ac7",
+    ".dockerignore": "fcef0c5874540f218ff031a39f3dc7577a47ccdb41bc75764ee4b890e6ff3b60",
+    "scripts/build_llamacpp.sh": "0de5e1cef98ad4c1b7207e449a25658ae8c05fbe77be4da76aa91a00ddf8d9ec",
+    "scripts/container-entrypoint.sh": "aeb6d59259d1adffcde9061f73db1ed1e4a66c1d31b852bf9ba77ffdfae10509",
+    "pyproject.toml": "137832ecc4b8224dfcbf7c5d8ad13a46856b3178c9ebbb74b6f1cad7e0867957",
+    "uv.lock": "c5c96d67f6f4a5524f99439027a816f6ff9e69327a6aa825f23c6294cd663d2c",
+    "openchoice/llamacpp_bridge.cpp": "b1940c30cd97e01b96005bc2deec10437167843c8956730e93ef7dc8aa9abf20",
+    "openchoice/__init__.py": "39beaff6d511497291d34a2f8bc584e869193911f149e03c8173ce517ca814bc",
+    "openchoice/server.py": "85bcc35291f24b65dcb0d2e6fc3b1acd21fd08cc43451537c674a0c84827b196",
+    "openchoice/llamacpp.py": "e13362a05bed94ee918705235b68a6c51278345d7e3874b238d87d986208875d",
+    "openchoice/native.py": "b081c5dc9518ec7019c0f5dbcbfd0b6d520724c47390c0579deabdb5bc4cd71c",
+    "openchoice/inference.py": "e69e45b871cbb44af7060ca6104aecd5584d8e930ad75b87510e8b5e1294bfdd",
+    "openchoice/integrity.py": "a08239334ced1f8b54f1b3267f4e5016a0b9ca2d599cf278f95677d1597a13c7"
+  },
+  "arm64_sdk_limitation": "Both QEMU CPU profiles returned the README Choice/Score/Noul probabilities and passed health, but the unchanged SDK checker exceeded its 180-second timeout on the first inference case. This is not a passing full arm64 SDK contract run. Native arm64 hardware remains unverified."
+}

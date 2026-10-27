@@ -1,0 +1,23 @@
+{
+  "rows": 256,
+  "max_sequence_tokens": 133,
+  "class_balance": {
+    "train/choice": {
+      "revenue": 48,
+      "identity": 48,
+      "reliability": 48,
+      "developer": 48
+    },
+    "dev/choice": {
+      "revenue": 16,
+      "identity": 16,
+      "reliability": 16,
+      "developer": 16
+    }
+  },
+  "warnings": [],
+  "splits": {
+    "train": 192,
+    "dev": 64
+  }
+}

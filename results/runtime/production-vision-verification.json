@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "id": "openchoice-owned-charts-05e0fb23ae31ce563e54d5cf93302b49abf942a74f0b05d5919afc9aef5a6ad5",
+      "primitive": "choice",
+      "probabilities": [
+        0.9997339827542978,
+        0.00011447257734329983,
+        3.650718953678957e-05,
+        3.0426952473404225e-05,
+        8.461052634860986e-05
+      ],
+      "lab_max_probability_delta": 0.0,
+      "forwards": 1
+    },
+    {
+      "id": "openchoice-owned-charts-01b2bf1aedc8c7ad2e13cb9d68642cd866e134d70af3155037e53b507210de89",
+      "primitive": "score",
+      "probabilities": [
+        0.01293236823321877,
+        0.04352658401074587,
+        0.0780789921059666,
+        0.16717198738913697,
+        0.4840931825196451,
+        0.21419688574128667
+      ],
+      "lab_max_probability_delta": 1.249458805863135e-08,
+      "forwards": 6
+    }
+  ],
+  "batch_seconds": 17.894574185000238,
+  "standalone_score_seconds": 13.21554229800131,
+  "batch_vs_single_score_max_probability_delta": 0.0,
+  "invalid_asset_hash": "rejected",
+  "device": "cpu",
+  "input_tokens": 2151,
+  "hf_mtmd_expanded_tokens_identical": true,
+  "mrope_required_by_bridge": true,
+  "peak_rss_mib": 6904.9765625,
+  "passed": true
+}

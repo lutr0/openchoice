@@ -1,0 +1,23 @@
+{
+  "file_sha256": "017a3cd8e15decd82f0deb3c8214c99c4640ba2ee7e9010d5038f4b7a80952b1",
+  "train_rows": 192,
+  "dev_rows": 64,
+  "distinct_train_messages": 96,
+  "distinct_dev_messages": 32,
+  "cross_split_message_overlap": 0,
+  "cross_split_group_overlap": 0,
+  "code_only_counterfactual_pairs": 128,
+  "identical_menu_within_every_pair": true,
+  "train_label_counts": {
+    "revenue": 48,
+    "identity": 48,
+    "reliability": 48,
+    "developer": 48
+  },
+  "dev_label_counts": {
+    "revenue": 16,
+    "identity": 16,
+    "reliability": 16,
+    "developer": 16
+  }
+}

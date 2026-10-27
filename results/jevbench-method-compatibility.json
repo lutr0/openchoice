@@ -1,0 +1,30 @@
+{
+  "checked_upstream_commit": "bb05a335bc809e61b20c0f745d25499a82b326fc",
+  "upstream": "https://github.com/fstandhartinger/jevbench",
+  "check": "SHA-256 comparison of a fresh sparse checkout against the archived task files and upstream implementation used by the release rerun",
+  "all_six_files_byte_identical": true,
+  "sha256": {
+    "datasets/public/easy.jsonl": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+    "datasets/public/original.jsonl": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+    "datasets/public/hard.jsonl": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb",
+    "jevbench/adapters/typesafe.py": "780f879416479b645ee519bb85d0cce722d0df7aa2b41a029de92b76f2593e51",
+    "jevbench/scoring.py": "6aa17d212ea20a3eeb6876149367842e8462c11dcb54d73df062fb406368331e",
+    "jevbench/tasks.py": "b9c2f8ba9a7301519656d79d47c31b8ab0542a5545498ce3b339d5e93b976812"
+  },
+  "valid_release_label": "JevBench legacy public 231 (harness byte-identical to v1.4.2.2 / upstream bb05a33)",
+  "release_result": {"correct": 188, "rows": 231, "errors": 0, "report": "gguf-jevbench.json"},
+  "v15_not_measured": {
+    "open_rows": 904,
+    "published_rows": 601,
+    "sealed_rows": 720,
+    "noul": "P(yes)<=0.20 is No, >=0.80 is Yes; middle is abstention counted wrong",
+    "score": "Chance-corrected normalized MAE of expected position, not exact argmax-level accuracy",
+    "headline_amendment": "Equal Choice/Noul/Score type weights; equal Intelligence/Calibration/Speed/Cost axis weights; 50/50 open/sealed",
+    "conclusion": "Legacy public accuracy is neither v1.5 accuracy nor its composite or official ranking. No new sealed result is claimed."
+  },
+  "method_sources": {
+    "docs/METHOD-v1.5.md": "c25d3d8b8512e4d93370a9e0c99705d19b2a9389956ca33b8a4bd2b0ec501c07",
+    "docs/METHOD-v1.5-README.md": "0e0fe961930519e5cbb32ee09e191063ddcaae38a95d99a10e38ae5eb35e483d",
+    "docs/METHOD-v1.5-ADDENDUM-HEADLINE-A-EQUAL-TYPES.md": "752ddccc4e191c81412631ee3121563421c4b9077cb6c3f2243ed1d1545cfab0"
+  }
+}

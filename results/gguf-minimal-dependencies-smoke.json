@@ -1,0 +1,17 @@
+{
+  "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+  "torch_installed": false,
+  "pillow_installed": false,
+  "device": "cpu",
+  "primitive": "choice",
+  "image_id": "openchoice-owned-charts-05e0fb23ae31ce563e54d5cf93302b49abf942a74f0b05d5919afc9aef5a6ad5",
+  "probabilities": [
+    0.9997339827542978,
+    0.00011447257734329983,
+    3.650718953678957e-05,
+    3.0426952473404225e-05,
+    8.461052634860986e-05
+  ],
+  "maximum_probability_delta_vs_archived_gguf": 0.0,
+  "passed": true
+}

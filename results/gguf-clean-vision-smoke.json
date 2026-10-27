@@ -1,0 +1,39 @@
+{
+  "runtime": "GGUF Q4_K_M CPU, torch-free public runtime, clean copied source and freshly built llama.cpp",
+  "threads": 2,
+  "torch_installed": false,
+  "rows": [
+    {
+      "id": "openchoice-owned-charts-05e0fb23ae31ce563e54d5cf93302b49abf942a74f0b05d5919afc9aef5a6ad5",
+      "primitive": "choice",
+      "probabilities": [
+        0.9997339827542978,
+        0.00011447257734329983,
+        3.650718953678957e-05,
+        3.0426952473404225e-05,
+        8.461052634860986e-05
+      ],
+      "maximum_probability_delta_vs_archived_gguf": 0.0
+    },
+    {
+      "id": "openchoice-owned-charts-01b2bf1aedc8c7ad2e13cb9d68642cd866e134d70af3155037e53b507210de89",
+      "primitive": "score",
+      "probabilities": [
+        0.01293236823321877,
+        0.04352658401074587,
+        0.0780789921059666,
+        0.16717198738913697,
+        0.4840931825196451,
+        0.21419688574128667
+      ],
+      "maximum_probability_delta_vs_archived_gguf": 1.249458805863135e-08
+    }
+  ],
+  "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+  "device": "cpu",
+  "input_tokens": 2151,
+  "seconds": 116.47334071699879,
+  "invalid_image_hash_rejected": true,
+  "peak_rss_mib": 6638.89453125,
+  "passed": true
+}

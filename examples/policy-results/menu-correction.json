@@ -1,0 +1,11 @@
+{
+  "reason": "The initial generator changed both contract code and option order within each paired message. Hold option order identical within pairs so contract code is the only causal input change.",
+  "initial_data_sha256": "60562656c0c0fbe7de43484dacb466fc66ce6b06dd3005fbbf0cbee3a05b5721",
+  "initial_baseline": {"correct":28,"rows":64,"accuracy":0.4375,"log_loss_rounded":1.538671},
+  "initial_training_completed_updates": 9,
+  "initial_training_interrupted_during_update": 10,
+  "initial_endpoint_dev_evaluated": false,
+  "initial_weights_used_for_final_run": false,
+  "changed": "Only menu permutation within C7 counterfactuals; messages, labels, split membership, policy and training recipe unchanged.",
+  "final_run": "Remeasure released adapter on corrected data before restarting all 150 updates from released weights, with fresh optimizer/RNG. No endpoint-quality-based data or checkpoint selection."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "openchoice-gguf-release-protocol-v1",
+  "scope": "Release regression measurements on already exposed frozen suites, not new sealed evaluation or model selection",
+  "runtime": {
+    "backend": "llama.cpp CPU via public ctypes bridge",
+    "llama_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+    "quantization": "Q4_K_M",
+    "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+    "threads": 12,
+    "nice": 10,
+    "gpu": "off",
+    "cpu_repacking": false,
+    "model_identity_note": "The loaded benchmark process retained the previous configuration-fingerprint API name. The final package uses the GGUF-file fingerprint instead; only metadata changed, not model bytes or arithmetic."
+  },
+  "execution": "Sequential POST /v1/systemone on a separate loopback port. No retries, truncation, prompt tuning, calibration, or failed-case exclusions. Targets excluded from requests; scoring is external. Each error counts incorrect against the full population.",
+  "timing_scope": "Descriptive request wall times only, not a controlled latency benchmark; shared desktop, concurrent low-priority build/render/acceptance checks",
+  "sciq": {
+    "dataset": "allenai/sciq",
+    "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+    "rows": 1000,
+    "frozen_rows_sha256": "bb83f4ecfa133110fa7d337af2b22a1c224f05cc0ae0d6d535042b455fbf7f63",
+    "rendering": "Original test question, empty context, no support passage. Original frozen option order from Random(SHA256(seed:index:question)), seed20260924; letter labels A-D.",
+    "metric": "Argmax exact-choice accuracy; all official test rows; no exclusions",
+    "rights": "CC-BY-NC-3.0 according to dataset card. Used for local noncommercial evaluation only. Dataset input text is not redistributed in result ledgers."
+  },
+  "decision_panel": {
+    "rows": 400,
+    "frozen_rows_sha256": "87571ee31ace629d1315c55950ed3b265088f27eba1ede5418844a5fb146b3ec",
+    "families": {"aegis2": 100, "boolq": 100, "helpsteer2": 100, "snli": 100},
+    "metric": "Choice/Score argmax exact class; Noul threshold0.5. Native Score independently reads each criterion before normalization.",
+    "exposure": "Source families were used in training; panel was previously consumed for final evaluation and comparisons."
+  },
+  "jevbench": {
+    "source": "https://github.com/fstandhartinger/jevbench",
+    "rows": 231,
+    "frozen_task_files_sha256": {
+      "easy.jsonl": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+      "original.jsonl": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+      "hard.jsonl": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb"
+    },
+    "implementation": "Archived upstream TypeSafeAdapter.build_request and score_task, including lexicographic argmax ties and distribution validation; no upstream runner retries",
+    "implementation_sha256": {
+      "adapters/typesafe.py": "780f879416479b645ee519bb85d0cce722d0df7aa2b41a029de92b76f2593e51",
+      "scoring.py": "6aa17d212ea20a3eeb6876149367842e8462c11dcb54d73df062fb406368331e",
+      "tasks.py": "b9c2f8ba9a7301519656d79d47c31b8ab0542a5545498ce3b339d5e93b976812"
+    },
+    "exposure": "Public tasks only; no sealed result, composite ranking, or paid comparator call"
+  },
+  "nimble_public": {
+    "source_commit": "f136b3f75721fda4ea961f73993cc50b08488835",
+    "rows": 3880,
+    "input_policy": "Every reconstructed subset must hash-match the author's frozen subset manifest; original JSON preserved",
+    "metric": "Existing local assess() exact-label argmax scoring; native Score, unlike Nimble's enum/Choice rating mode",
+    "assess_module_sha256": "229b2054c9f24d0ed6bf33b7f8100146a4c69481af48c7ba6e3abeb77e3c36b3"
+  },
+  "publication": "Raw ledgers retain request hashes, row IDs, model responses, metrics, and timing; benchmark input text is omitted. Comparator numbers are explicitly historical local NF4 or author-published, never new GGUF comparator runs."
+}

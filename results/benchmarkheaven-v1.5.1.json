@@ -1,0 +1,128 @@
+{
+  "source": "https://benchmarkheaven.com/api/jevbench/v1.5.1",
+  "retrieved": "2026-09-29",
+  "source_sha256": "6f2fa547454b1108fad701ef302f48450742562393d532d45eccd048f736a9e2",
+  "revision": "v1.5.1",
+  "sample": {
+    "open": 904,
+    "sealed": 720,
+    "total": 1624,
+    "published_open": 601
+  },
+  "headline": "Official composite; not raw accuracy. Full text benchmark includes open and sealed decisions.",
+  "rows": [
+    {
+      "key": "cygnet",
+      "name": "Cygnet (blockbrain, frozen Gemma-4-12B-it)",
+      "repository": "https://github.com/blockbrain-ai/cygnet-recipe",
+      "composite": 73.7012674756234,
+      "intelligence": 71.09241537850588,
+      "I_open": 72.46391414608965,
+      "I_sealed": 69.7209166109221,
+      "calibration": 87.00732784869052,
+      "speed": 90.9725824502543,
+      "cost": 56.42912569481113
+    },
+    {
+      "key": "winnow-12b",
+      "name": "Winnow-12B Q8",
+      "repository": "https://huggingface.co/EldanRing/Winnow-12B",
+      "composite": 73.23310265651646,
+      "intelligence": 74.43468593005443,
+      "I_open": 72.47593928648939,
+      "I_sealed": 76.39343257361945,
+      "calibration": 84.06987570289192,
+      "speed": 86.13960582383429,
+      "cost": 56.556023424877196
+    },
+    {
+      "key": "jev-1.13.0",
+      "name": "Jev 1.13.0 (TypeSafe AI)",
+      "repository": "https://docs.typesafe.ai",
+      "composite": 72.13292897895896,
+      "intelligence": 71.99974990450261,
+      "I_open": 71.54923917772135,
+      "I_sealed": 72.45026063128388,
+      "calibration": 88.02903108992821,
+      "speed": 83.8140999985063,
+      "cost": 54.72500234484654
+    },
+    {
+      "key": "jevk5-v0.3-4b",
+      "name": "JevK5 v0.3 (4B)",
+      "repository": null,
+      "composite": 71.89794783714967,
+      "intelligence": 56.27051532364801,
+      "I_open": 61.599649589732365,
+      "I_sealed": 50.94138105756366,
+      "calibration": 88.34394935502905,
+      "speed": 93.55214886599305,
+      "cost": 63.07359395281681
+    },
+    {
+      "key": "plumb-4b",
+      "name": "Plumb-4B (crh225, JevK5 v0.2 + LoRA)",
+      "repository": null,
+      "composite": 71.56069240662383,
+      "intelligence": 55.84843638193568,
+      "I_open": 60.882134008279415,
+      "I_sealed": 50.81473875559194,
+      "calibration": 87.44416146719458,
+      "speed": 93.45235823893108,
+      "cost": 63.07359395281681
+    },
+    {
+      "key": "jev-omni",
+      "name": "Jev-Omni (akhilaaa3, Gemma-4-12B merged)",
+      "repository": "https://huggingface.co/akhilaaa3/Jev-Omni",
+      "composite": 71.5005378093621,
+      "intelligence": 70.49063617669168,
+      "I_open": 70.48105345190129,
+      "I_sealed": 70.50021890148207,
+      "calibration": 82.59813256382532,
+      "speed": 84.67623138886884,
+      "cost": 56.05113155939739
+    },
+    {
+      "key": "decider-4b-v2",
+      "name": "decider-4b v2 (Mapika)",
+      "repository": "https://github.com/Mapika/decider",
+      "composite": 71.28417523518583,
+      "intelligence": 55.7709920864861,
+      "I_open": 61.74364566303797,
+      "I_sealed": 49.79833850993424,
+      "calibration": 85.59400811608691,
+      "speed": 90.85503597842234,
+      "cost": 64.54376873042901
+    },
+    {
+      "key": "imajev-4b-rtx5090-a2",
+      "name": "Imajev-4B (RTX 5090)",
+      "repository": null,
+      "composite": 70.38659212275981,
+      "intelligence": 53.47383727839022,
+      "I_open": 56.24619253993687,
+      "I_sealed": 50.70148201684356,
+      "calibration": 88.11694149062471,
+      "speed": 91.13208929836159,
+      "cost": 63.26458220826236
+    },
+    {
+      "key": "laya",
+      "name": "Laya (Convai Innovations, ModernBERT-large 421M)",
+      "repository": "https://huggingface.co/convaiinnovations/laya",
+      "composite": 0,
+      "intelligence": 0,
+      "I_open": -0.47796953967189104,
+      "I_sealed": -13.186035258388955,
+      "calibration": 73.70996996254986,
+      "speed": 73.89376469233966,
+      "cost": 84.89402784895724,
+      "rank": 86
+    }
+  ],
+  "not_measured": {
+    "OpenChoice": "Pending sealed/official maintainer evaluation",
+    "GLiNER2.5-Decide": "No exact-artifact row; do not substitute GLiNER2.5-Multi"
+  }
+}

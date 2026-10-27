@@ -1,0 +1,18 @@
+{
+  "description": "Hardware fields extracted from the archived lab lscpu record; independently observed again during public release verification. Host-specific input paths intentionally omitted.",
+  "source_provenance_sha256": "406b809e4d23d43ed239744b330f7bc120f215828b2eeb212953eeef08f553db",
+  "architecture": "x86_64",
+  "cpu_model": "AMD Ryzen 9 7900X3D 12-Core Processor",
+  "cpu_cores": 12,
+  "cpu_threads": 24,
+  "inference_threads": 12,
+  "gpu_model": "NVIDIA GeForce RTX 4060",
+  "gpu_vram_class_gib": 8,
+  "llama_cpp_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+  "frozen_input_sha256": {
+    "decision_panel_400": "87571ee31ace629d1315c55950ed3b265088f27eba1ede5418844a5fb146b3ec",
+    "decision_panel_nf4_predictions": "1138d07168234cb799499f91b7969391adb71c835722fbfb0ce2d7f6ac225e69",
+    "sciq_test_1000": "bb83f4ecfa133110fa7d337af2b22a1c224f05cc0ae0d6d535042b455fbf7f63",
+    "sciq_nf4_predictions": "0c741c7fc982e36381673f8be7efc4c9143aaf3eabe5fc62fb3bf2b9c1f1df46"
+  }
+}

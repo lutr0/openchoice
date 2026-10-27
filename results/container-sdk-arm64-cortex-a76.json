@@ -1,0 +1,35 @@
+{
+  "sdk_version": "0.6.0",
+  "base_url": "http://127.0.0.1:8782",
+  "started_at": "2026-09-29T17:27:24.269824+00:00",
+  "cases": [
+    {
+      "name": "sdk_sync_models",
+      "seconds": 0.009760968008777127,
+      "request": null,
+      "response": {
+        "models": [
+          {
+            "name": "openchoice-gguf-6d8eef23223c2f53-q4km",
+            "description": "Local OpenChoice native-slot GGUF Q4_K_M; Choice 1\u201326, Score 1\u201310, Noul scalar scorer; not a Jev model. Request-only aliases jev-latest and openchoice-latest route to the selected local default openchoice-gguf-6d8eef23223c2f53-q4km, never a Jev model.",
+            "release_date": "2026-09-17"
+          }
+        ]
+      }
+    }
+  ],
+  "unchecked": [],
+  "claims": [
+    "Live HTTP requests using official sync and async SDK clients; no mocks.",
+    "Checks wire formulas, local model identity, isolation, capacity and error behavior.",
+    "Semantic contrasts are observations, not a quality threshold or Jev benchmark.",
+    "26-option and ten-level fixture measures native runtime capacity only."
+  ],
+  "probability_isolation_absolute_tolerance": 2e-05,
+  "passed": false,
+  "failure": {
+    "type": "TypeSafeAPITimeoutError",
+    "message": "Request timed out (timeout=180)."
+  },
+  "total_seconds": 180.04962869099109
+}

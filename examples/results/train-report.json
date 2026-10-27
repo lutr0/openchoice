@@ -1,0 +1,203 @@
+{
+  "schema_version": "openchoice-finetune-run-v1",
+  "steps": 30,
+  "updates_this_invocation": 30,
+  "elapsed_seconds": 86.21198131144047,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "peak_allocated_gib": 18.445499897003174,
+  "peak_reserved_gib": 18.619140625,
+  "mode": "lora-bfloat16",
+  "contract": {
+    "data_sha256": "37e4d5ce38b359c3366ece4800a92a6203cfe6a7a19e1078255d27eacae8080a",
+    "replay_sha256": "708d8d62e37b875632b27012a4500d30bb86e9226d59b3e022d1f2366540fdac",
+    "seed": 42,
+    "batch_size": 4,
+    "lr": 1e-05,
+    "replay_fraction": 0.2,
+    "qlora": false,
+    "initialize": "/workspace/released"
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.00182817000313662,
+      "tokens": 658,
+      "elapsed_seconds": 15.897063506767154
+    },
+    {
+      "step": 2,
+      "loss": 0.008649281910038553,
+      "tokens": 709,
+      "elapsed_seconds": 18.983102349564433
+    },
+    {
+      "step": 3,
+      "loss": 0.0009964242781279609,
+      "tokens": 551,
+      "elapsed_seconds": 21.263353757560253
+    },
+    {
+      "step": 4,
+      "loss": 0.0013305062457220629,
+      "tokens": 449,
+      "elapsed_seconds": 23.19657194055617
+    },
+    {
+      "step": 5,
+      "loss": 0.002642887626279844,
+      "tokens": 663,
+      "elapsed_seconds": 25.310224065557122
+    },
+    {
+      "step": 6,
+      "loss": 0.0002804807390930364,
+      "tokens": 554,
+      "elapsed_seconds": 27.331228660419583
+    },
+    {
+      "step": 7,
+      "loss": 0.0011748018168873386,
+      "tokens": 706,
+      "elapsed_seconds": 30.589550592005253
+    },
+    {
+      "step": 8,
+      "loss": 0.005405958855590143,
+      "tokens": 585,
+      "elapsed_seconds": 32.682728588581085
+    },
+    {
+      "step": 9,
+      "loss": 7.357857066381257e-05,
+      "tokens": 664,
+      "elapsed_seconds": 35.10389354638755
+    },
+    {
+      "step": 10,
+      "loss": 7.411555634462275e-05,
+      "tokens": 667,
+      "elapsed_seconds": 37.23395927995443
+    },
+    {
+      "step": 11,
+      "loss": 0.00019145060923619894,
+      "tokens": 664,
+      "elapsed_seconds": 39.357896419242024
+    },
+    {
+      "step": 12,
+      "loss": 0.00046125906192173716,
+      "tokens": 449,
+      "elapsed_seconds": 41.5610658954829
+    },
+    {
+      "step": 13,
+      "loss": 2.053358002740424e-05,
+      "tokens": 665,
+      "elapsed_seconds": 43.703236727043986
+    },
+    {
+      "step": 14,
+      "loss": 0.0002501583494449733,
+      "tokens": 553,
+      "elapsed_seconds": 45.71525462344289
+    },
+    {
+      "step": 15,
+      "loss": 0.004792934808165228,
+      "tokens": 584,
+      "elapsed_seconds": 48.09983474947512
+    },
+    {
+      "step": 16,
+      "loss": 5.3465196970137185e-05,
+      "tokens": 560,
+      "elapsed_seconds": 51.21635754778981
+    },
+    {
+      "step": 17,
+      "loss": 5.35803440016025e-05,
+      "tokens": 659,
+      "elapsed_seconds": 53.384193040430546
+    },
+    {
+      "step": 18,
+      "loss": 0.00017361970321871922,
+      "tokens": 554,
+      "elapsed_seconds": 55.68789831735194
+    },
+    {
+      "step": 19,
+      "loss": 0.0017751948475961399,
+      "tokens": 505,
+      "elapsed_seconds": 57.726164704188704
+    },
+    {
+      "step": 20,
+      "loss": 4.693829350799206e-05,
+      "tokens": 551,
+      "elapsed_seconds": 59.76728784479201
+    },
+    {
+      "step": 21,
+      "loss": 0.0001889153246565911,
+      "tokens": 594,
+      "elapsed_seconds": 62.964556235820055
+    },
+    {
+      "step": 22,
+      "loss": 5.9691231854230864e-05,
+      "tokens": 661,
+      "elapsed_seconds": 65.09325960837305
+    },
+    {
+      "step": 23,
+      "loss": 1.290430827793898e-05,
+      "tokens": 666,
+      "elapsed_seconds": 67.44524464011192
+    },
+    {
+      "step": 24,
+      "loss": 0.00046689674650224333,
+      "tokens": 704,
+      "elapsed_seconds": 70.4734263997525
+    },
+    {
+      "step": 25,
+      "loss": 0.0001952838963461545,
+      "tokens": 583,
+      "elapsed_seconds": 72.57539325393736
+    },
+    {
+      "step": 26,
+      "loss": 3.0099997616162e-05,
+      "tokens": 554,
+      "elapsed_seconds": 74.8510364331305
+    },
+    {
+      "step": 27,
+      "loss": 6.318065572941123e-06,
+      "tokens": 666,
+      "elapsed_seconds": 76.93924638070166
+    },
+    {
+      "step": 28,
+      "loss": 1.4394279446605651e-05,
+      "tokens": 668,
+      "elapsed_seconds": 79.04994850978255
+    },
+    {
+      "step": 29,
+      "loss": 0.00031023826397813536,
+      "tokens": 624,
+      "elapsed_seconds": 82.24455236829817
+    },
+    {
+      "step": 30,
+      "loss": 1.7821781000293413e-05,
+      "tokens": 554,
+      "elapsed_seconds": 84.26619943417609
+    }
+  ],
+  "model_sha256": "5eab9bb408aad15b292346a86b1b68ec5e131353a3470dbb33aa5efc13648f6a"
+}

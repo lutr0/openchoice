@@ -1,0 +1,13 @@
+{
+  "name": "openchoice-launch-media",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node render.mjs",
+    "poster": "node render.mjs --poster",
+    "assets": "node render.mjs --assets"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.3.0"
+  }
+}

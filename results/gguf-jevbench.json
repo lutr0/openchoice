@@ -1,0 +1,136 @@
+{
+  "schema_version": "openchoice-release-benchmark-v1",
+  "runtime": "GGUF Q4_K_M, llama.cpp CPU, 12 threads, no repacking",
+  "model": "openchoice-native-f6818010c29d97b6-q4km",
+  "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+  "llama_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+  "suite_label": "JevBench legacy public 231; not v1.5",
+  "method_compatibility": "jevbench-method-compatibility.json",
+  "protocol": "Sequential loopback HTTP; one attempt per row; errors count wrong; no retries, exclusions, truncation or tuning. Targets never sent to model. Dataset text omitted from public ledger.",
+  "input_sha256": {
+    "easy.jsonl": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+    "original.jsonl": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+    "hard.jsonl": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb"
+  },
+  "overall": {
+    "rows": 231,
+    "correct": 188,
+    "errors": 0,
+    "accuracy": 0.8138528138528138
+  },
+  "by_family": {
+    "adequacy": {
+      "rows": 12,
+      "correct": 11,
+      "errors": 0,
+      "accuracy": 0.9166666666666666
+    },
+    "adversarial": {
+      "rows": 6,
+      "correct": 6,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "ambiguous": {
+      "rows": 7,
+      "correct": 4,
+      "errors": 0,
+      "accuracy": 0.5714285714285714
+    },
+    "extraction": {
+      "rows": 24,
+      "correct": 24,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "fact": {
+      "rows": 12,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "intent": {
+      "rows": 24,
+      "correct": 23,
+      "errors": 0,
+      "accuracy": 0.9583333333333334
+    },
+    "judge_hard": {
+      "rows": 17,
+      "correct": 13,
+      "errors": 0,
+      "accuracy": 0.7647058823529411
+    },
+    "long_policy": {
+      "rows": 19,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 0.631578947368421
+    },
+    "multi_hop": {
+      "rows": 18,
+      "correct": 11,
+      "errors": 0,
+      "accuracy": 0.6111111111111112
+    },
+    "ordinal": {
+      "rows": 12,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "policy": {
+      "rows": 12,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "probability": {
+      "rows": 10,
+      "correct": 5,
+      "errors": 0,
+      "accuracy": 0.5
+    },
+    "routing": {
+      "rows": 12,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "routing_hard": {
+      "rows": 5,
+      "correct": 5,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "temporal_numeric": {
+      "rows": 15,
+      "correct": 3,
+      "errors": 0,
+      "accuracy": 0.2
+    },
+    "tool_selection": {
+      "rows": 12,
+      "correct": 12,
+      "errors": 0,
+      "accuracy": 1.0
+    },
+    "tradeoff": {
+      "rows": 6,
+      "correct": 3,
+      "errors": 0,
+      "accuracy": 0.5
+    },
+    "trap": {
+      "rows": 8,
+      "correct": 8,
+      "errors": 0,
+      "accuracy": 1.0
+    }
+  },
+  "http_seconds": {
+    "total": 937.2795687589751,
+    "median": 1.412248014996294
+  },
+  "raw": "gguf-jevbench-predictions.jsonl"
+}

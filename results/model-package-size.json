@@ -1,0 +1,9 @@
+{
+  "text_gguf_bytes": 5629108704,
+  "projector_bytes": 624229216,
+  "serving_weights_gib": 5.823874771595001,
+  "adapter_bytes": 160492456,
+  "complete_staging_du_apparent_bytes": 6433882818,
+  "complete_staging_gib": 5.99202031083405,
+  "note": "Complete directory includes tokenizer, retained training adapter, metadata/docs and directory-entry sizes. Documentation edits can change its byte total slightly; ~6.0GiB is the stated complete download class."
+}

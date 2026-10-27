@@ -1,0 +1,12 @@
+{
+  "scoped_tests": {"command":"uv run --group train python -m unittest discover -s tests -p test_finetune.py","passed":10,"reported_test_seconds":0.015},
+  "real_smokes": ["24GB RTX A5000 BF16 training and optimizer/RNG resume from150 to300 updates", "Full64-row BF16 before/after plus24-row retention evaluation", "FP32 CPU merge, F16 conversion and Q4_K_M export with unchanged90percent gate", "All64-row CPU GGUF parity and separately measured released GGUF baseline", "Both released and adapted CPU GGUF on24 authored general retention rows", "Paired S1/C7 requests through the public CPU HTTP server", "All retrieved manifest files SHA256-verified", "Retrieved artifact served by current local public runtime; C7 request selects identity and generates zero tokens"],
+  "temporary_http_services_stopped": ["finetune-policy-http","finetune-policy-local"],
+  "production_judge_untouched": true,
+  "rental_instance":"redacted-policy-tutorial",
+  "rental_instances_after":[],
+  "displayed_additional_charges_usd":0.545,
+  "billing_note":"GPU0.476 plus storage0.069; provider may post additional delayed charges. Separate earlier mechanical-smoke rental displayed0.619.",
+  "published":false,
+  "committed":false
+}

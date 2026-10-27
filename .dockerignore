@@ -1,0 +1,12 @@
+**
+!Dockerfile
+!pyproject.toml
+!uv.lock
+!LICENSE
+!NOTICE
+!openchoice/
+!openchoice/*.py
+!openchoice/llamacpp_bridge.cpp
+!scripts/
+!scripts/build_llamacpp.sh
+!scripts/container-entrypoint.sh

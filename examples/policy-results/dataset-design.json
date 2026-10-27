@@ -1,0 +1,11 @@
+{
+  "rights": "Self-authored for this repository; Apache-2.0, no external dataset content copied.",
+  "purpose": "Demonstrate learning a company's non-public routing conventions rather than sharpening an already-solved generic classification task.",
+  "message_authoring": "96 distinct training requests and 32 separately authored development requests; lists are explicit in make_examples.py rather than interpolation templates.",
+  "counterfactuals": "Every message occurs twice within its own split/group, once under S1 and once under C7. The topic alone therefore cannot solve the task. A correct adapter must condition on contract code.",
+  "standard_contract": "S1 follows the primary topic indicated by the natural-language ticket.",
+  "legacy_contract": "C7 assigns revenue issues to Identity, identity issues to Reliability, reliability issues to Developer, and developer issues to Revenue. These arbitrary inherited ownership assignments are not inferable from desk names.",
+  "hard_negatives": "Messages explicitly distinguish the requested resolution from a mentioned but irrelevant billing, login, incident or integration topic.",
+  "label_leakage_controls": "No label or policy lookup table is included in state; id/group/split are never rendered. Choice menu order rotates independently of target labels. Priority is a nuisance field shared across topics.",
+  "limitations": "Fictional policy and human-authored labels; small paired development set, not a broad natural-distribution benchmark. Known deterministic rules may be better implemented in code; an explicit policy prompt is another alternative. Neither alternative is compared here."
+}

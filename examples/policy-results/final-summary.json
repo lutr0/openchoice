@@ -1,0 +1,205 @@
+{
+  "schema_version": "openchoice-policy-comparison-v1",
+  "gguf_retention": {
+    "before": {
+      "rows": 24,
+      "correct": 24,
+      "accuracy": 1,
+      "brier": 0.015617787668624426,
+      "log_loss": 0.05420423919633233
+    },
+    "after": {
+      "rows": 24,
+      "correct": 24,
+      "accuracy": 1,
+      "brier": 9.986520259751625e-10,
+      "log_loss": 0.000018991568714531924
+    }
+  },
+  "exploratory_dev": true,
+  "bf16": {
+    "before": {
+      "dev": {
+        "rows": 64,
+        "correct": 28,
+        "accuracy": 0.4375,
+        "brier": 0.8107676065010146,
+        "log_loss": 1.5479310064975316
+      },
+      "retention": {
+        "rows": 24,
+        "correct": 24,
+        "accuracy": 1,
+        "brier": 0.01250562689039589,
+        "log_loss": 0.04316440556562051
+      }
+    },
+    "after": {
+      "dev": {
+        "rows": 64,
+        "correct": 62,
+        "accuracy": 0.96875,
+        "brier": 0.06208634494523798,
+        "log_loss": 0.2620492807137111
+      },
+      "retention": {
+        "rows": 24,
+        "correct": 24,
+        "accuracy": 1,
+        "brier": 6.351170007223925e-10,
+        "log_loss": 0.000016121742520936352
+      }
+    }
+  },
+  "gguf": {
+    "before": {
+      "rows": 64,
+      "correct": 28,
+      "accuracy": 0.4375,
+      "brier": 0.8392953013260873,
+      "log_loss": 1.5573226809406708
+    },
+    "after": {
+      "rows": 64,
+      "correct": 61,
+      "accuracy": 0.953125,
+      "brier": 0.09329062989431366,
+      "log_loss": 0.3531209935477117
+    }
+  },
+  "gguf_paired_changes": {
+    "wrong_to_right": 34,
+    "right_to_wrong": 1
+  },
+  "bf16_paired_changes": {
+    "wrong_to_right": 34,
+    "right_to_wrong": 0
+  },
+  "retention_warning": false,
+  "parity": {
+    "schema_version": "openchoice-export-parity-v1",
+    "rows": 64,
+    "decision_agreement": 0.984375,
+    "gguf_accuracy": 0.953125,
+    "max_probability_error": 0.9982591839563443,
+    "elapsed_seconds": 388.6208845824003,
+    "reference_runtime": "pytorch-bfloat16",
+    "output_runtime": "llama.cpp-Q4_K_M-cpu",
+    "warning": "Q4 is lossy: parity is measured, not exact equality; reevaluate your full held-out data before deployment.",
+    "checkpoint_sha256": "eb22b221ce6441291ad221beaff96d2ab1f6ae21ccef3f17922f33dbdfb6a45b",
+    "model_sha256": "6b9b4d1ff8c1002d00d5bdd4fcd4d73b6ac6c615b3306d0c943f11f5de69191e"
+  },
+  "by_contract": {
+    "bf16": {
+      "before": {
+        "S1": {
+          "rows": 32,
+          "correct": 27,
+          "accuracy": 0.84375,
+          "brier": 0.20772867688641153,
+          "log_loss": 0.402047086537225
+        },
+        "C7": {
+          "rows": 32,
+          "correct": 1,
+          "accuracy": 0.03125,
+          "brier": 1.4138065361156176,
+          "log_loss": 2.693814926457838
+        }
+      },
+      "after": {
+        "S1": {
+          "rows": 32,
+          "correct": 32,
+          "accuracy": 1,
+          "brier": 1.4111327248417904e-9,
+          "log_loss": 0.00001769470040290325
+        },
+        "C7": {
+          "rows": 32,
+          "correct": 30,
+          "accuracy": 0.9375,
+          "brier": 0.12417268847934324,
+          "log_loss": 0.5240808667270193
+        }
+      }
+    },
+    "gguf": {
+      "before": {
+        "S1": {
+          "rows": 32,
+          "correct": 26,
+          "accuracy": 0.8125,
+          "brier": 0.32147080270408596,
+          "log_loss": 0.575605756352336
+        },
+        "C7": {
+          "rows": 32,
+          "correct": 2,
+          "accuracy": 0.0625,
+          "brier": 1.3571197999480886,
+          "log_loss": 2.5390396055290054
+        }
+      },
+      "after": {
+        "S1": {
+          "rows": 32,
+          "correct": 32,
+          "accuracy": 1,
+          "brier": 1.8860273872946016e-7,
+          "log_loss": 0.00009937285453413518
+        },
+        "C7": {
+          "rows": 32,
+          "correct": 29,
+          "accuracy": 0.90625,
+          "brier": 0.1865810711858886,
+          "log_loss": 0.7061426142408894
+        }
+      }
+    }
+  },
+  "training": {
+    "total_updates": 300,
+    "resumed_at": 150,
+    "elapsed_seconds_sum_of_invocations": 2118.5736788474023,
+    "peak_allocated_gib": 18.445695877075195,
+    "peak_reserved_gib": 18.607421875,
+    "gpu": "NVIDIA RTX A5000",
+    "mode": "lora-bfloat16"
+  },
+  "maximum_probability_drift_example": {
+    "id": "dev-reliability-07-C7",
+    "pytorch": [
+      0.9999692770892874,
+      0.00002282781696371003,
+      0.0000021233177346740076,
+      0.000005771776014209179
+    ],
+    "gguf": [
+      0.0017313394419563712,
+      0.0000015099360685280394,
+      0.0000021948896166115772,
+      0.9982649557323585
+    ],
+    "gold": 0,
+    "agrees": false,
+    "gguf_correct": false,
+    "max_probability_error": 0.9982591839563443
+  },
+  "export_host_gguf": {
+    "rows": 64,
+    "correct": 61,
+    "accuracy": 0.953125,
+    "brier": 0.09331103758352223,
+    "log_loss": 0.36555347028085045
+  },
+  "export_host_gguf_retention": {
+    "rows": 24,
+    "correct": 24,
+    "accuracy": 1,
+    "brier": 8.437355925207634e-10,
+    "log_loss": 0.000017999904331363183
+  },
+  "gguf_comparison": "Released and adapted artifacts measured on the same local host with4 CPU threads; export-host parity is retained separately."
+}

@@ -1,0 +1,37 @@
+{
+  "model_gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+  "checks": [
+    {
+      "suite": "gguf-sciq",
+      "rows": 1000,
+      "correct": 953,
+      "errors": 0,
+      "raw_sha256": "19993c138f64541f3a17c270e26edc4280ae988ad3b8bed37323d071c394b7b8",
+      "summary_matches_ledger": true
+    },
+    {
+      "suite": "gguf-panel400",
+      "rows": 400,
+      "correct": 321,
+      "errors": 0,
+      "raw_sha256": "3d97ab1555bdec6c56bf018731835b84d57034efeb0addd900ff4240ab671390",
+      "summary_matches_ledger": true
+    },
+    {
+      "suite": "gguf-jevbench",
+      "rows": 231,
+      "correct": 188,
+      "errors": 0,
+      "raw_sha256": "e3a6cc6b887fba576bf685a471448b33941413397bb9accaacca1e5590eeae4b",
+      "summary_matches_ledger": true
+    },
+    {
+      "suite": "gguf-nimble-public",
+      "rows": 3880,
+      "correct": 2926,
+      "errors": 1,
+      "raw_sha256": "04afcb39584c90017f809a06a55069cf244b7fc97642215e818aaac7f75f9d37",
+      "summary_matches_ledger": true
+    }
+  ]
+}

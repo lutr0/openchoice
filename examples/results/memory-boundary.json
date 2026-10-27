@@ -1,0 +1,42 @@
+{
+  "mode": "qlora-nf4",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "validation": {
+    "rows": 2,
+    "max_sequence_tokens": 3641,
+    "class_balance": {
+      "train/noul": {
+        "False": 1
+      },
+      "dev/choice": {
+        "red": 1
+      }
+    },
+    "warnings": [
+      "dev/choice: missing labels ['blue']; add coverage before trusting accuracy",
+      "train/noul: missing labels ['True']; add coverage before trusting accuracy"
+    ],
+    "splits": {
+      "train": 1,
+      "dev": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "long",
+      "loss": 0.05149030685424805,
+      "processed_tokens": 3641,
+      "seconds": 7.720289535820484,
+      "peak_allocated_gib": 16.765538692474365,
+      "peak_reserved_gib": 18.259765625
+    },
+    {
+      "id": "image",
+      "loss": 0.00448056124150753,
+      "processed_tokens": 118,
+      "seconds": 2.0309366080909967,
+      "peak_allocated_gib": 11.991625785827637,
+      "peak_reserved_gib": 16.134765625
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "variant": "gguf-q4-norepack",
+  "runtime": "llama",
+  "threads": 12,
+  "load_seconds": 5.231452385000011,
+  "file_size_bytes": 5629108704,
+  "uptime_before": "14:40:05 up  1:46,  1 user,  load average: 11.54, 11.63, 12.55",
+  "versions": {
+    "llama_cpp_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+    "n_ctx": 4096,
+    "n_batch": 4096,
+    "n_ubatch": 512,
+    "gpu_layers": 0,
+    "use_extra_bufts": false,
+    "system_info": "CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | ",
+    "verified_token_ids": 4807
+  },
+  "memory_after_load": {
+    "peak_rss_bytes": 6401540096,
+    "peak_anonymous_bytes": 682442752
+  },
+  "latency": [
+    {
+      "label": "latency-choice-150",
+      "tokens_per_forward": [
+        150
+      ],
+      "processed_tokens": 150,
+      "seconds": [
+        0.8922799199999645,
+        0.9054084270001113
+      ],
+      "median_seconds": 0.8988441735000379,
+      "probabilities": [
+        [
+          0.99521972300021,
+          0.003908655346008167,
+          0.0007593355014012693,
+          0.0001122861523803121
+        ],
+        [
+          0.99521972300021,
+          0.003908655346008167,
+          0.0007593355014012693,
+          0.0001122861523803121
+        ]
+      ],
+      "uptime_before": "14:40:11 up  1:46,  1 user,  load average: 10.94, 11.50, 12.51",
+      "uptime_after": "14:40:13 up  1:46,  1 user,  load average: 11.43, 11.59, 12.53",
+      "peak_rss_bytes": 6463750144,
+      "peak_anonymous_bytes": 743653376
+    },
+    {
+      "label": "latency-choice-300",
+      "tokens_per_forward": [
+        300
+      ],
+      "processed_tokens": 300,
+      "seconds": [
+        1.7264919970002666,
+        1.7239141879999806
+      ],
+      "median_seconds": 1.7252030925001236,
+      "probabilities": [
+        [
+          0.9958042297078306,
+          0.0033866930199065487,
+          0.0007166337454017265,
+          9.244352686138486e-05
+        ],
+        [
+          0.9958042297078306,
+          0.0033866930199065487,
+          0.0007166337454017265,
+          9.244352686138486e-05
+        ]
+      ],
+      "uptime_before": "14:40:13 up  1:46,  1 user,  load average: 11.43, 11.59, 12.53",
+      "uptime_after": "14:40:16 up  1:46,  1 user,  load average: 11.43, 11.59, 12.53",
+      "peak_rss_bytes": 6497697792,
+      "peak_anonymous_bytes": 777601024
+    },
+    {
+      "label": "latency-choice-600",
+      "tokens_per_forward": [
+        600
+      ],
+      "processed_tokens": 600,
+      "seconds": [
+        3.2900873389999106,
+        3.2721303409998654
+      ],
+      "median_seconds": 3.281108839999888,
+      "probabilities": [
+        [
+          0.9949598294958268,
+          0.003743463196567289,
+          0.0011510807991687542,
+          0.00014562650843708875
+        ],
+        [
+          0.9949598294958268,
+          0.003743463196567289,
+          0.0011510807991687542,
+          0.00014562650843708875
+        ]
+      ],
+      "uptime_before": "14:40:16 up  1:46,  1 user,  load average: 11.43, 11.59, 12.53",
+      "uptime_after": "14:40:23 up  1:46,  1 user,  load average: 11.59, 11.62, 12.53",
+      "peak_rss_bytes": 6542782464,
+      "peak_anonymous_bytes": 822685696
+    },
+    {
+      "label": "latency-choice-2000",
+      "tokens_per_forward": [
+        2000
+      ],
+      "processed_tokens": 2000,
+      "seconds": [
+        10.944219678999616,
+        11.150971078999646
+      ],
+      "median_seconds": 11.047595378999631,
+      "probabilities": [
+        [
+          0.9962359056713296,
+          0.0028691071026060756,
+          0.0007804885989479972,
+          0.00011449862711661103
+        ],
+        [
+          0.9962359056713296,
+          0.0028691071026060756,
+          0.0007804885989479972,
+          0.00011449862711661103
+        ]
+      ],
+      "uptime_before": "14:40:23 up  1:46,  1 user,  load average: 11.59, 11.62, 12.53",
+      "uptime_after": "14:40:45 up  1:46,  1 user,  load average: 11.86, 11.68, 12.53",
+      "peak_rss_bytes": 6545313792,
+      "peak_anonymous_bytes": 825217024
+    },
+    {
+      "label": "latency-choice-3700",
+      "tokens_per_forward": [
+        3700
+      ],
+      "processed_tokens": 3700,
+      "seconds": [
+        20.780141689999255,
+        20.767077260000406
+      ],
+      "median_seconds": 20.77360947499983,
+      "probabilities": [
+        [
+          0.9962572294235489,
+          0.0030634612953159236,
+          0.0005875695051173659,
+          9.173977601794066e-05
+        ],
+        [
+          0.9962572294235489,
+          0.0030634612953159236,
+          0.0005875695051173659,
+          9.173977601794066e-05
+        ]
+      ],
+      "uptime_before": "14:40:45 up  1:46,  1 user,  load average: 11.86, 11.68, 12.53",
+      "uptime_after": "14:41:27 up  1:47,  1 user,  load average: 11.73, 11.69, 12.50",
+      "peak_rss_bytes": 6547214336,
+      "peak_anonymous_bytes": 827117568
+    },
+    {
+      "label": "latency-noul-150",
+      "tokens_per_forward": [
+        150
+      ],
+      "processed_tokens": 150,
+      "seconds": [
+        0.8988294860000678,
+        0.8931167760001699
+      ],
+      "median_seconds": 0.8959731310001189,
+      "probabilities": [
+        [
+          0.0031222353708237893,
+          0.9968777646291762
+        ],
+        [
+          0.0031222353708237893,
+          0.9968777646291762
+        ]
+      ],
+      "uptime_before": "14:41:27 up  1:47,  1 user,  load average: 11.73, 11.69, 12.50",
+      "uptime_after": "14:41:28 up  1:47,  1 user,  load average: 11.76, 11.69, 12.50",
+      "peak_rss_bytes": 6547214336,
+      "peak_anonymous_bytes": 827117568
+    },
+    {
+      "label": "latency-noul-300",
+      "tokens_per_forward": [
+        300
+      ],
+      "processed_tokens": 300,
+      "seconds": [
+        1.72048639500008,
+        1.7150239950005925
+      ],
+      "median_seconds": 1.7177551950003362,
+      "probabilities": [
+        [
+          0.003462571028845507,
+          0.9965374289711545
+        ],
+        [
+          0.003462571028845507,
+          0.9965374289711545
+        ]
+      ],
+      "uptime_before": "14:41:28 up  1:47,  1 user,  load average: 11.76, 11.69, 12.50",
+      "uptime_after": "14:41:32 up  1:47,  1 user,  load average: 11.76, 11.69, 12.50",
+      "peak_rss_bytes": 6547300352,
+      "peak_anonymous_bytes": 827203584
+    },
+    {
+      "label": "latency-noul-600",
+      "tokens_per_forward": [
+        600
+      ],
+      "processed_tokens": 600,
+      "seconds": [
+        3.291728024999429,
+        3.3380462459999762
+      ],
+      "median_seconds": 3.3148871354997027,
+      "probabilities": [
+        [
+          0.0036543040056782328,
+          0.9963456959943218
+        ],
+        [
+          0.0036543040056782328,
+          0.9963456959943218
+        ]
+      ],
+      "uptime_before": "14:41:32 up  1:47,  1 user,  load average: 11.76, 11.69, 12.50",
+      "uptime_after": "14:41:38 up  1:47,  1 user,  load average: 12.18, 11.78, 12.52",
+      "peak_rss_bytes": 6547300352,
+      "peak_anonymous_bytes": 827203584
+    },
+    {
+      "label": "latency-noul-2000",
+      "tokens_per_forward": [
+        2000
+      ],
+      "processed_tokens": 2000,
+      "seconds": [
+        11.048745801000223,
+        10.895679887999904
+      ],
+      "median_seconds": 10.972212844500064,
+      "probabilities": [
+        [
+          0.0043389281122789836,
+          0.995661071887721
+        ],
+        [
+          0.0043389281122789836,
+          0.995661071887721
+        ]
+      ],
+      "uptime_before": "14:41:38 up  1:47,  1 user,  load average: 12.18, 11.78, 12.52",
+      "uptime_after": "14:42:00 up  1:48,  1 user,  load average: 11.52, 11.68, 12.47",
+      "peak_rss_bytes": 6547300352,
+      "peak_anonymous_bytes": 827203584
+    },
+    {
+      "label": "latency-noul-3700",
+      "tokens_per_forward": [
+        3700
+      ],
+      "processed_tokens": 3700,
+      "seconds": [
+        20.817530152000472,
+        20.781444809000277
+      ],
+      "median_seconds": 20.799487480500375,
+      "probabilities": [
+        [
+          0.004643996753058155,
+          0.9953560032469418
+        ],
+        [
+          0.004643996753058155,
+          0.9953560032469418
+        ]
+      ],
+      "uptime_before": "14:42:00 up  1:48,  1 user,  load average: 11.52, 11.68, 12.47",
+      "uptime_after": "14:42:42 up  1:48,  1 user,  load average: 12.13, 11.79, 12.47",
+      "peak_rss_bytes": 6547300352,
+      "peak_anonymous_bytes": 827203584
+    },
+    {
+      "label": "score-5",
+      "tokens_per_forward": [
+        579,
+        578,
+        579,
+        579,
+        579
+      ],
+      "processed_tokens": 2894,
+      "seconds": [
+        16.222109172000273,
+        16.04041033300018
+      ],
+      "median_seconds": 16.131259752500227,
+      "probabilities": [
+        [
+          0.01899815107997612,
+          0.12993014395106572,
+          0.22959005485867492,
+          0.31038720029238775,
+          0.31109444981789547
+        ],
+        [
+          0.01899815107997612,
+          0.12993014395106572,
+          0.22959005485867492,
+          0.31038720029238775,
+          0.31109444981789547
+        ]
+      ],
+      "uptime_before": "14:42:42 up  1:48,  1 user,  load average: 12.13, 11.79, 12.47",
+      "uptime_after": "14:43:14 up  1:49,  1 user,  load average: 12.06, 11.85, 12.47",
+      "peak_rss_bytes": 6547304448,
+      "peak_anonymous_bytes": 827207680
+    }
+  ],
+  "peak_rss_bytes": 6547468288,
+  "peak_anonymous_bytes": 827371520,
+  "uptime_after": "14:52:26 up  1:58,  1 user,  load average: 12.96, 12.33, 12.41",
+  "vs_gpu_nf4": {
+    "panel": {
+      "n": 100,
+      "agreement": 0.94,
+      "max_abs_probability_diff": 0.4156047265314222,
+      "mean_abs_probability_diff": 0.04348211868708412,
+      "accuracy": 0.83,
+      "reference_accuracy": 0.81,
+      "mean_seconds": 4.995793615780013,
+      "median_seconds": 0.852539259000423,
+      "mean_tokens": 897.9,
+      "sources": {
+        "aegis2": {
+          "n": 25,
+          "accuracy": 0.8,
+          "reference_accuracy": 0.8
+        },
+        "boolq": {
+          "n": 25,
+          "accuracy": 0.96,
+          "reference_accuracy": 0.92
+        },
+        "helpsteer2": {
+          "n": 25,
+          "accuracy": 0.64,
+          "reference_accuracy": 0.6
+        },
+        "snli": {
+          "n": 25,
+          "accuracy": 0.92,
+          "reference_accuracy": 0.92
+        }
+      }
+    },
+    "sciq": {
+      "n": 100,
+      "agreement": 0.98,
+      "max_abs_probability_diff": 0.38832351149200184,
+      "mean_abs_probability_diff": 0.01644592597116773,
+      "accuracy": 0.95,
+      "reference_accuracy": 0.93,
+      "mean_seconds": 0.5191714256600153,
+      "median_seconds": 0.5203298500000528,
+      "mean_tokens": 72.07,
+      "sources": {
+        "sciq": {
+          "n": 100,
+          "accuracy": 0.95,
+          "reference_accuracy": 0.93
+        }
+      }
+    }
+  },
+  "vs_cpu_bf16": {
+    "panel": {
+      "n": 100,
+      "agreement": 0.96,
+      "max_abs_probability_diff": 0.4548063063461739,
+      "mean_abs_probability_diff": 0.02567743781638538,
+      "accuracy": 0.83,
+      "reference_accuracy": 0.83,
+      "mean_seconds": 4.995793615780013,
+      "median_seconds": 0.852539259000423,
+      "mean_tokens": 897.9,
+      "sources": {
+        "aegis2": {
+          "n": 25,
+          "accuracy": 0.8,
+          "reference_accuracy": 0.76
+        },
+        "boolq": {
+          "n": 25,
+          "accuracy": 0.96,
+          "reference_accuracy": 0.96
+        },
+        "helpsteer2": {
+          "n": 25,
+          "accuracy": 0.64,
+          "reference_accuracy": 0.64
+        },
+        "snli": {
+          "n": 25,
+          "accuracy": 0.92,
+          "reference_accuracy": 0.96
+        }
+      }
+    },
+    "sciq": {
+      "n": 100,
+      "agreement": 0.96,
+      "max_abs_probability_diff": 0.38180136598662306,
+      "mean_abs_probability_diff": 0.012949336034977707,
+      "accuracy": 0.95,
+      "reference_accuracy": 0.93,
+      "mean_seconds": 0.5191714256600153,
+      "median_seconds": 0.5203298500000528,
+      "mean_tokens": 72.07,
+      "sources": {
+        "sciq": {
+          "n": 100,
+          "accuracy": 0.95,
+          "reference_accuracy": 0.93
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "openchoice-policy-protocol-v2",
+  "frozen_before_final_baseline": true,
+  "amendment": "Initial training was interrupted before endpoint DEV evaluation to hold menu order fixed within each contract counterfactual pair. Wording, labels and training recipe were unchanged; the final baseline is remeasured before restarting from the released adapter. See menu-correction.json.",
+  "candidate": "Cedar Cloud contract-specific support ownership",
+  "rules": {
+    "S1": "Route to the apparent primary topic: revenue, identity, reliability, developer.",
+    "C7": {"revenue":"identity","identity":"reliability","reliability":"developer","developer":"revenue"}
+  },
+  "inference_information": "Messages, contract code, priority, desk names and a generic internal-policy instruction. The actual C7 mapping is intentionally learned from labels, not printed in the prompt.",
+  "train_rows": 192,
+  "train_distinct_messages": 96,
+  "dev_rows": 64,
+  "dev_distinct_messages": 32,
+  "split_design": "Separately authored dev messages; no message string/template substitution crosses train/dev. Both contract counterfactuals stay in the same message group/split and use IDENTICAL menus. Only contract code changes within a pair. Menu order rotates by message index, not contract or target. Includes primary-topic hard negatives.",
+  "baseline_runtime": "PyTorch BF16 released adapter, before any adaptation",
+  "headroom_admission": "Use the corrected candidate if released-model dev accuracy is between 0.3 and 0.75; record it before final training. No endpoint-quality-based dataset or checkpoint selection.",
+  "training_recipe": {"mode":"qlora-nf4","steps":150,"batch_size":8,"learning_rate":0.00005,"replay_fraction":0.2,"seed":42,"checkpoint_every":50},
+  "evaluation": "Compare released versus endpoint in the same BF16 runtime on all 64 user DEV and all 24 authored retention DEV rows. Report per-contract results and paired before/after probabilities.",
+  "export": "Reload adapter on BF16 base, merge, convert/quantize Q4_K_M, compare all 64 dev decisions on CPU GGUF, serve the artifact with the public HTTP server.",
+  "caveat": "A fictional policy-learning demonstration, not evidence that fine-tuning beats putting known rules into code or explicit instructions. No broad capability claim.",
+  "gpu_target": "A physically rented 24 GB RTX A5000",
+  "additional_spend_cap_usd": 10
+}

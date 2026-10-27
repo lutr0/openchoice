@@ -1,0 +1,340 @@
+{
+  "runtime": "llama.cpp-Q4_K_M-cpu",
+  "model": "openchoice-gguf-6b9b4d1ff8c1002d-q4km",
+  "summary": {
+    "rows": 24,
+    "accuracy": 1.0,
+    "brier": 8.437355925207634e-10,
+    "log_loss": 1.7999904331363183e-05
+  },
+  "predictions": [
+    {
+      "id": "general-048",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9999924517089556,
+        7.548291044474417e-06
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 1.1395339538358521e-10,
+      "log_loss": 7.548319532926869e-06
+    },
+    {
+      "id": "general-049",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        1.9632908582362095e-05,
+        0.9999563075310225,
+        2.40595603950997e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 2.873345391159298e-09,
+      "log_loss": 4.3693423521234586e-05
+    },
+    {
+      "id": "general-050",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        9.398266523389932e-06,
+        0.9999704306981716,
+        2.017103530501243e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 1.3695416895399073e-09,
+      "log_loss": 2.9569739008826082e-05
+    },
+    {
+      "id": "general-051",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        5.001028101692226e-06,
+        0.9999949989718984
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 5.002056414727439e-11,
+      "log_loss": 5.001040606819336e-06
+    },
+    {
+      "id": "general-052",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        3.8567118405043095e-06,
+        1.1227964334830256e-06,
+        0.999995020491726
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 4.093040070306102e-11,
+      "log_loss": 4.9795206718425086e-06
+    },
+    {
+      "id": "general-053",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        6.688853511213167e-06,
+        9.401380434091912e-06,
+        0.9999839097660548
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 3.9202234377292705e-10,
+      "log_loss": 1.6090363394423477e-05
+    },
+    {
+      "id": "general-054",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9999921816812606,
+        7.818318739471291e-06
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 1.2225221582307946e-10,
+      "log_loss": 7.818349302629776e-06
+    },
+    {
+      "id": "general-055",
+      "primitive": "choice",
+      "gold": 0,
+      "probabilities": [
+        0.9999956999870151,
+        3.3915597241534886e-06,
+        9.08453260843434e-07
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 3.0818076359976444e-11,
+      "log_loss": 4.300022229985905e-06
+    },
+    {
+      "id": "general-056",
+      "primitive": "score",
+      "gold": 0,
+      "probabilities": [
+        0.9999686024551477,
+        1.515346728241749e-05,
+        1.624407756983479e-05
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 1.4793034495239728e-09,
+      "log_loss": 3.139803776549189e-05
+    },
+    {
+      "id": "general-057",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        5.746057454410555e-06,
+        0.9999942539425455
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 6.60343525399663e-11,
+      "log_loss": 5.7460739631656615e-06
+    },
+    {
+      "id": "general-058",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        1.504863973249849e-05,
+        0.9999545219328538,
+        3.0429427413615835e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 3.220666201870158e-09,
+      "log_loss": 4.5479101304815356e-05
+    },
+    {
+      "id": "general-059",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        1.2218160267043481e-05,
+        0.9999655603608228,
+        2.2221478910218692e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 1.8291663119209368e-09,
+      "log_loss": 3.4440232235142706e-05
+    },
+    {
+      "id": "general-060",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9999939821521296,
+        6.017847870384451e-06
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 7.242898598181857e-11,
+      "log_loss": 6.017865977673449e-06
+    },
+    {
+      "id": "general-061",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        4.630848302191739e-06,
+        1.4223516096517855e-06,
+        0.9999939468000881
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 6.010906927246258e-11,
+      "log_loss": 6.053218232559218e-06
+    },
+    {
+      "id": "general-062",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        9.661176263271102e-06,
+        8.083678061410654e-06,
+        0.9999822551456754
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 4.735640327917034e-10,
+      "log_loss": 1.7745011766387293e-05
+    },
+    {
+      "id": "general-063",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        8.010099338087087e-06,
+        0.999991989900662
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 1.2832338281130058e-10,
+      "log_loss": 8.01013141905755e-06
+    },
+    {
+      "id": "general-064",
+      "primitive": "choice",
+      "gold": 0,
+      "probabilities": [
+        0.9999957656823143,
+        3.1634529046930798e-06,
+        1.0708647811316294e-06
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 2.908363192313576e-11,
+      "log_loss": 4.2343266504513645e-06
+    },
+    {
+      "id": "general-065",
+      "primitive": "score",
+      "gold": 0,
+      "probabilities": [
+        0.9999623389579831,
+        1.9036349518420898e-05,
+        1.8624692498436415e-05
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 2.127615859444236e-09,
+      "log_loss": 3.766175121170557e-05
+    },
+    {
+      "id": "general-066",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9999914290369595,
+        8.570963040562548e-06
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 1.4692281488467887e-10,
+      "log_loss": 8.57099977143534e-06
+    },
+    {
+      "id": "general-067",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        1.7513425099631375e-05,
+        0.9999517998460363,
+        3.0686728863985765e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 3.571650229213995e-09,
+      "log_loss": 4.8201315628422874e-05
+    },
+    {
+      "id": "general-068",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        1.038103242311334e-05,
+        0.9999683360971,
+        2.1282870476994384e-05
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 1.563329156770378e-09,
+      "log_loss": 3.166440421194789e-05
+    },
+    {
+      "id": "general-069",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        7.4327478296982005e-06,
+        0.9999925672521702
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 1.1049148060086356e-10,
+      "log_loss": 7.432775452779018e-06
+    },
+    {
+      "id": "general-070",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        4.305433863640734e-06,
+        1.2784431967871408e-06,
+        0.9999944161229396
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 5.13508607872568e-11,
+      "log_loss": 5.5838926502995255e-06
+    },
+    {
+      "id": "general-071",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        7.531661263898433e-06,
+        7.226017283343874e-06,
+        0.9999852423214529
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 3.267303232723489e-10,
+      "log_loss": 1.4757787442693178e-05
+    }
+  ]
+}

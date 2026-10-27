@@ -1,0 +1,20 @@
+[
+ {
+  "amount": "0.476",
+  "description": "Policy tutorial rental GPU charge: hours * $/hr",
+  "instance_id": "redacted-policy-tutorial",
+  "quantity": "2.065",
+  "rate": "0.2307",
+  "timestamp": 1790640000,
+  "type": "charge"
+ },
+ {
+  "amount": "0.069",
+  "description": "Policy tutorial rental storage charge: hours * $/hr",
+  "instance_id": "redacted-policy-tutorial",
+  "quantity": "2.075",
+  "rate": "0.0333",
+  "timestamp": 1790640000,
+  "type": "charge"
+ }
+]

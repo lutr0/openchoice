@@ -1,0 +1,1 @@
+{"model":"openchoice-gguf-5a289b8831065ec4-q4km","answers":{"route":{"type":"choice","choice":"revenue","confidence":0.9999811505288604,"probabilities":{"revenue":0.9999858628966453,"identity":9.15257270981979e-06,"reliability":3.697268395012529e-06,"developer":1.287262249928386e-06}}},"usage":{"billing_units":0,"input_tokens":165,"output_tokens":0}}

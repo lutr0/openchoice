@@ -1,0 +1,1103 @@
+{
+  "sdk_version": "0.6.0",
+  "base_url": "http://127.0.0.1:8781",
+  "started_at": "2026-09-29T16:40:51.034186+00:00",
+  "cases": [
+    {
+      "name": "sdk_sync_models",
+      "seconds": 0.002874976009479724,
+      "request": null,
+      "response": {
+        "models": [
+          {
+            "name": "openchoice-gguf-6d8eef23223c2f53-q4km",
+            "description": "Local OpenChoice native-slot GGUF Q4_K_M; Choice 1\u201326, Score 1\u201310, Noul scalar scorer; not a Jev model. Request-only aliases jev-latest and openchoice-latest route to the selected local default openchoice-gguf-6d8eef23223c2f53-q4km, never a Jev model.",
+            "release_date": "2026-09-17"
+          }
+        ]
+      }
+    },
+    {
+      "name": "typed_default_alias",
+      "seconds": 2.711896926004556,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "SDK default",
+        "question_ids": [
+          "topic",
+          "payment_severity",
+          "needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "alone_topic",
+      "seconds": 0.6049932949972572,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 95,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "alone_payment_severity",
+      "seconds": 1.516888714992092,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "payment_severity"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 206,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "alone_needs_refund",
+      "seconds": 0.5653451340040192,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 87,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "question_id_rename",
+      "seconds": 2.6979352070047753,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "renamed_topic",
+          "renamed_payment_severity",
+          "renamed_needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "renamed_topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "renamed_payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "renamed_needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "option_permutation",
+      "seconds": 0.6262793440109817,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998460916766077,
+            "probabilities": {
+              "billing": 0.998973944510718,
+              "weather": 0.0006779631212036239,
+              "sports": 0.00034809236807834904
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 95,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "semantic_contrast_sports",
+      "seconds": 2.4707745229970897,
+      "request": {
+        "state": "The football team scored three goals and won the championship match.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic",
+          "payment_severity",
+          "needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "sports",
+            "confidence": 0.9959543803051837,
+            "probabilities": {
+              "sports": 0.9973029202034559,
+              "weather": 0.002312567521629589,
+              "billing": 0.0003845122749144186
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 0.05701534214245324,
+            "confidence": 0.9144769867863202,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.949638042151159,
+              "1": 0.04370857355522898,
+              "2": 0.006653384293612128
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.0029202310677348916
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 368,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "semantic_contrast_weather",
+      "seconds": 2.7200470850075362,
+      "request": {
+        "state": "The forecast warns of heavy rain, strong winds and thunderstorms tomorrow.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic",
+          "payment_severity",
+          "needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "weather",
+            "confidence": 0.9983064255056208,
+            "probabilities": {
+              "sports": 0.0007061630423967344,
+              "weather": 0.9988709503370805,
+              "billing": 0.0004228866205226658
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 0.04047795810650528,
+            "confidence": 0.9392830628402421,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.9647298278948231,
+              "1": 0.030062386103848458,
+              "2": 0.005207786001328411
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.0022687950145677542
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 378,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "semantic_contrast_billing",
+      "seconds": 2.796698621008545,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic",
+          "payment_severity",
+          "needs_refund"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "dictionary_nested_json",
+      "seconds": 1.8356872639997164,
+      "request": {
+        "state": {
+          "message": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+          "metadata": [
+            null,
+            true,
+            3
+          ]
+        },
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "structured",
+          "rubric"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "structured": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.9919003070304369,
+            "probabilities": {
+              "billing": 0.9959501535152184,
+              "weather": 0.004049846484781547
+            }
+          },
+          "rubric": {
+            "type": "score",
+            "score": 0.9728624014087585,
+            "confidence": 0.9457248028175169,
+            "legend": {
+              "0": {
+                "topic": [
+                  "weather",
+                  {
+                    "payment": false
+                  }
+                ]
+              },
+              "1": [
+                "duplicate charge",
+                {
+                  "refund": true
+                }
+              ]
+            },
+            "probabilities": {
+              "0": 0.02713759859124154,
+              "1": 0.9728624014087585
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 275,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "array_state",
+      "seconds": 0.6591212849889416,
+      "request": {
+        "state": [
+          "The forecast warns of heavy rain, strong winds and thunderstorms tomorrow.",
+          {
+            "source": "forecast"
+          }
+        ],
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "topic"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "weather",
+            "confidence": 0.998465453751103,
+            "probabilities": {
+              "sports": 0.0006495251851898877,
+              "weather": 0.9989769691674021,
+              "billing": 0.0003735056474080411
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 102,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "singleton_choice",
+      "seconds": 0.4084198450000258,
+      "request": {
+        "state": "The football team scored three goals and won the championship match.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "only"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "only": {
+            "type": "choice",
+            "choice": "sports",
+            "confidence": 1.0,
+            "probabilities": {
+              "sports": 1.0
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 58,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "singleton_score",
+      "seconds": 0.5037724950088887,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "only"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "only": {
+            "type": "score",
+            "score": 0.0,
+            "confidence": 1.0,
+            "legend": {
+              "0": {
+                "message": "refund"
+              }
+            },
+            "probabilities": {
+              "0": 1.0
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 66,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "native_26_choice_10_score_capacity_not_quality",
+      "seconds": 6.639132455995423,
+      "request": {
+        "state": "My credit card was charged twice for this invoice. Please refund the duplicate payment.",
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "question_ids": [
+          "wide",
+          "levels"
+        ]
+      },
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "wide": {
+            "type": "choice",
+            "choice": "0",
+            "confidence": 0.27761225282123064,
+            "probabilities": {
+              "0": 0.30539639694349097,
+              "1": 0.26999501681904897,
+              "2": 0.15689007153842843,
+              "3": 0.041073301261266126,
+              "4": 0.012386236242082205,
+              "5": 0.02724604367634805,
+              "6": 0.020694948410789307,
+              "7": 0.016527231490327404,
+              "8": 0.023210377541634897,
+              "9": 0.02586170543953717,
+              "10": 0.009343542563338796,
+              "11": 0.0076279265178773375,
+              "12": 0.003491107136622205,
+              "13": 0.010060349493845901,
+              "14": 0.006878860528512205,
+              "15": 0.006798090479876136,
+              "16": 0.002461062899432416,
+              "17": 0.007327971884836663,
+              "18": 0.004437786631121565,
+              "19": 0.009605348612226589,
+              "20": 0.01744954435387959,
+              "21": 0.0018524586891229408,
+              "22": 0.0014292524668086813,
+              "23": 0.0009973252380251446,
+              "24": 0.0022962829899919185,
+              "25": 0.00866176015152831
+            }
+          },
+          "levels": {
+            "type": "score",
+            "score": 4.308789546793762,
+            "confidence": 0.0,
+            "legend": {
+              "0": "Payment problem level 0",
+              "1": "Payment problem level 1",
+              "2": "Payment problem level 2",
+              "3": "Payment problem level 3",
+              "4": "Payment problem level 4",
+              "5": "Payment problem level 5",
+              "6": "Payment problem level 6",
+              "7": "Payment problem level 7",
+              "8": "Payment problem level 8",
+              "9": "Payment problem level 9"
+            },
+            "probabilities": {
+              "0": 0.044865637359532445,
+              "1": 0.14856348971260203,
+              "2": 0.13034926405503963,
+              "3": 0.11977174182785152,
+              "4": 0.1019321186529733,
+              "5": 0.10488137997486367,
+              "6": 0.08844987905634215,
+              "7": 0.0955550658189733,
+              "8": 0.0821906179459483,
+              "9": 0.08344080559587363
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 959,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "sdk_async_models",
+      "seconds": 0.011025593004887924,
+      "request": null,
+      "response": {
+        "models": [
+          {
+            "name": "openchoice-gguf-6d8eef23223c2f53-q4km",
+            "description": "Local OpenChoice native-slot GGUF Q4_K_M; Choice 1\u201326, Score 1\u201310, Noul scalar scorer; not a Jev model. Request-only aliases jev-latest and openchoice-latest route to the selected local default openchoice-gguf-6d8eef23223c2f53-q4km, never a Jev model.",
+            "release_date": "2026-09-17"
+          }
+        ]
+      }
+    },
+    {
+      "name": "async_concurrent_0",
+      "seconds": 2.6910637779947137,
+      "request": null,
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "async_concurrent_1",
+      "seconds": 5.309283662994858,
+      "request": null,
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "async_concurrent_2",
+      "seconds": 7.972000662994105,
+      "request": null,
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "async_concurrent_3",
+      "seconds": 10.603415938996477,
+      "request": null,
+      "response": {
+        "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+        "answers": {
+          "topic": {
+            "type": "choice",
+            "choice": "billing",
+            "confidence": 0.998660146788376,
+            "probabilities": {
+              "sports": 0.0005929757692009542,
+              "weather": 0.00030025970521510077,
+              "billing": 0.999106764525584
+            }
+          },
+          "payment_severity": {
+            "type": "score",
+            "score": 1.9641771206873422,
+            "confidence": 0.9462656810310135,
+            "legend": {
+              "0": "No payment problem; discussing football or weather",
+              "1": "A payment question without an incorrect charge",
+              "2": "An incorrect or duplicate credit card charge requiring a refund"
+            },
+            "probabilities": {
+              "0": 0.0015719348203465714,
+              "1": 0.032679009671964535,
+              "2": 0.9657490555076889
+            }
+          },
+          "needs_refund": {
+            "type": "noul",
+            "noul": 0.982559214990014
+          }
+        },
+        "usage": {
+          "billing_units": 0,
+          "input_tokens": 388,
+          "output_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "false_state",
+      "seconds": 0.004954981995979324,
+      "request": {
+        "bytes": 319,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "empty_questions",
+      "seconds": 0.0008984389860415831,
+      "request": {
+        "bytes": 167,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "unknown_model",
+      "seconds": 0.0008103889995254576,
+      "request": {
+        "bytes": 382,
+        "expected_status": [
+          404
+        ]
+      },
+      "response": {
+        "status": 404,
+        "body": {
+          "detail": "Unknown model"
+        }
+      }
+    },
+    {
+      "name": "invalid_question_type",
+      "seconds": 0.0007578890072181821,
+      "request": {
+        "bytes": 193,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "state_overflow",
+      "seconds": 0.03659853599674534,
+      "request": {
+        "bytes": 40316,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Input exceeds the model token limit"
+        }
+      }
+    },
+    {
+      "name": "schema_overflow",
+      "seconds": 0.025633792000007816,
+      "request": {
+        "bytes": 40216,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Input exceeds the model token limit"
+        }
+      }
+    },
+    {
+      "name": "native_choice_27_options_rejected",
+      "seconds": 0.001299618001212366,
+      "request": {
+        "bytes": 970,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Native backend supports 1\u201326 Choice options; menus are never cropped or sharded"
+        }
+      }
+    },
+    {
+      "name": "malformed_json",
+      "seconds": 0.0007601190009154379,
+      "request": {
+        "bytes": 1,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "nan_json",
+      "seconds": 0.0009306190040661022,
+      "request": {
+        "bytes": 417,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "infinity_json",
+      "seconds": 0.0006894190009916201,
+      "request": {
+        "bytes": 422,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "duplicate_keys",
+      "seconds": 0.0007199880055850372,
+      "request": {
+        "bytes": 421,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Invalid JSON or request schema"
+        }
+      }
+    },
+    {
+      "name": "combined_input_overflow",
+      "seconds": 0.024071814987109974,
+      "request": {
+        "bytes": 40129,
+        "expected_status": [
+          422
+        ]
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "detail": "Input exceeds the model token limit"
+        }
+      }
+    },
+    {
+      "name": "body_limit",
+      "seconds": 0.0035693339887075126,
+      "request": {
+        "bytes": 2097468,
+        "expected_status": [
+          413
+        ]
+      },
+      "response": {
+        "status": 413,
+        "body": {
+          "detail": "Request body exceeds 2 MiB"
+        }
+      }
+    },
+    {
+      "name": "bad_auth",
+      "seconds": 0.0007195990037871525,
+      "request": {
+        "bytes": 403,
+        "expected_status": [
+          401
+        ]
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "detail": "Missing or invalid bearer token"
+        }
+      }
+    }
+  ],
+  "unchecked": [],
+  "claims": [
+    "Live HTTP requests using official sync and async SDK clients; no mocks.",
+    "Checks wire formulas, local model identity, isolation, capacity and error behavior.",
+    "Semantic contrasts are observations, not a quality threshold or Jev benchmark.",
+    "26-option and ten-level fixture measures native runtime capacity only."
+  ],
+  "probability_isolation_absolute_tolerance": 2e-05,
+  "passed": true,
+  "option_permutation_observation": {
+    "max_absolute_probability_change": 0.00037770341598852315,
+    "same_choice": true
+  },
+  "semantic_observations": {
+    "sports": {
+      "selected_topic": "sports",
+      "expected_topic_probability": 0.9973029202034559,
+      "payment_score": 0.05701534214245324,
+      "refund_noul": 0.0029202310677348916
+    },
+    "weather": {
+      "selected_topic": "weather",
+      "expected_topic_probability": 0.9988709503370805,
+      "payment_score": 0.04047795810650528,
+      "refund_noul": 0.0022687950145677542
+    },
+    "billing": {
+      "selected_topic": "billing",
+      "expected_topic_probability": 0.999106764525584,
+      "payment_score": 1.9641771206873422,
+      "refund_noul": 0.982559214990014
+    }
+  },
+  "semantic_deltas": {
+    "billing_minus_sports_payment_score": 1.9071617785448889,
+    "billing_minus_weather_refund_noul": 0.9802904199754462
+  },
+  "four_async_calls_seconds": 10.60416038800031,
+  "total_seconds": 37.50241415400524
+}

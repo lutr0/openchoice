@@ -1,0 +1,46 @@
+{
+  "checked": "2026-09-29",
+  "upstream_commit": "bb05a335bc809e61b20c0f745d25499a82b326fc",
+  "status": "Not runnable from the checked public releases; no new benchmark inference claimed",
+  "checks": [
+    {
+      "source": "https://github.com/fstandhartinger/jevbench",
+      "result": "Full checkout exposes the unchanged 231 legacy JSONL tasks. v1.5 method/addenda are present, but no 601-published-item task bundle or v1.5 item scorer was found."
+    },
+    {
+      "source": "https://api.github.com/repos/fstandhartinger/jevbench/releases",
+      "result": "Listed releases v1.4.2, v1.4.1, v1.4.0; all have empty assets arrays. No v1.5 tagged asset bundle."
+    },
+    {
+      "source": "git refs/heads and refs/tags/*1.5* of the upstream repository",
+      "result": "No v1.5 release branch/tag with a task bundle; v1.5-named branch restores the method documents."
+    },
+    {
+      "source": "https://benchmarkheaven.com/api/jevbench/v1.5.1",
+      "sha256": "6f2fa547454b1108fad701ef302f48450742562393d532d45eccd048f736a9e2",
+      "result": "Released aggregate: 904 open, 601 published-open, 720 sealed. Contains system-level results, not request/answer items."
+    },
+    {
+      "source": "https://github.com/fstandhartinger/jevbench/tree/bb05a335bc809e61b20c0f745d25499a82b326fc/results/imagejevbench/v0.1.3",
+      "result": "Only aggregate, release manifest, recomputation receipt, README. README explicitly excludes task text, images, answer keys and per-item predictions; the scorer is identified by hash, not included."
+    },
+    {
+      "source": "https://benchmarkheaven.com/image-jev-bench",
+      "result": "Public aggregate page links source datasets and custom evaluation, not the frozen 228 public image tasks, mapping/assets, or scorer bundle."
+    },
+    {
+      "source": "https://raw.githubusercontent.com/fstandhartinger/model-market-comparison/main/API.md",
+      "result": "Documents aggregate-only JevBench routes and image results, with readers rejecting item-level task text/answers/predictions."
+    },
+    {
+      "source": "https://api.github.com/search/repositories?q=ImageJevBench",
+      "result": "Zero matching repositories returned."
+    }
+  ],
+  "missing_prerequisites": {
+    "JevBench_v1_5_1": "Frozen open/public task JSONL with targets and tier/type metadata, plus the version-pinned typed scorer",
+    "ImageJevBench_v0_1_3": "Frozen public image tasks, image assets/mapping/targets, and version-pinned scorer"
+  },
+  "next_step": "Publisher requests maintainer evaluation/access through https://benchmarkheaven.com/jev-models/custom-evaluation; no submission or contact performed",
+  "prohibited_inference": "Legacy 231-task accuracy and chart-development accuracy are not current open Intelligence or official composites"
+}

@@ -1,0 +1,21 @@
+{
+  "model": "openchoice-latest",
+  "state": {
+    "company": "Cedar Cloud",
+    "contract_code": "S1",
+    "priority": "urgent",
+    "message": "Our auditors require a breakdown of the withholding amount on the latest remittance."
+  },
+  "questions": {
+    "route": {
+      "type": "choice",
+      "instructions": "Apply Cedar Cloud's internal ownership policy and select the final owning desk. Contract codes can override the apparent issue topic. Urgency alone does not change ownership.",
+      "criteria": {
+        "revenue": "The Revenue desk.",
+        "identity": "The Identity desk.",
+        "reliability": "The Reliability desk.",
+        "developer": "The Developer desk."
+      }
+    }
+  }
+}

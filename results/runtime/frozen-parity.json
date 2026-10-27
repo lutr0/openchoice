@@ -1,0 +1,13 @@
+{
+  "description": "Verbatim checks.frozen_parity excerpt from the production integration verification, before public torch-free packaging. Same GGUF/projector bytes as release; no new evaluation claimed.",
+  "source_sha256": "c34096eab574d9de2291cbcae2f26d945f75b7cce20c7705c7398d5efe78cac8",
+  "rows": 200,
+  "cpu_lab_max_probability_delta": 1.6310136297104094e-08,
+  "gpu_nf4_decision_agreement": 0.96,
+  "correct": 178,
+  "gpu_nf4_correct": 174,
+  "gpu_nf4_mean_probability_delta": 0.028032865746615926,
+  "gpu_nf4_max_probability_delta": 0.4156047265314222,
+  "seconds": 448.41644177499984,
+  "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238"
+}

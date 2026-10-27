@@ -1,0 +1,18 @@
+{
+  "candidate": "Cedar Cloud contract-specific ownership, code-only counterfactual pairs",
+  "admitted_before_final_training": true,
+  "semantic_candidates_measured": 1,
+  "menu_versions_measured": 2,
+  "baseline_correct": 28,
+  "baseline_total": 64,
+  "baseline_accuracy": 0.4375,
+  "standard_contract_correct": 27,
+  "standard_contract_total": 32,
+  "legacy_contract_correct": 1,
+  "legacy_contract_total": 32,
+  "baseline_log_loss": 1.5479310064975316,
+  "decision": "Corrected candidate remains within the requested 40–70% headroom band. Restart the unchanged 150-update QLoRA recipe from released weights. No endpoint-quality-based selection.",
+  "baseline_report": "policy-baseline.json",
+  "data_sha256": "5096d6c27995af7c1f1f8b7145ff16a44a1a8cbd93c8112eae7abde5d04572bf",
+  "correction_record": "menu-correction.json"
+}

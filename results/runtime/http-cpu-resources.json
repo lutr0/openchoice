@@ -1,0 +1,13 @@
+{
+  "port": 8770,
+  "pid": 374145,
+  "mode": "gpu=off; CPU-only bridge",
+  "after": "81 synthetic caller-shaped HTTP requests and disconnect cancellation proof",
+  "vmhwm_kib": 6495776,
+  "vmrss_kib": 6495776,
+  "rss_anon_kib": 907448,
+  "rss_file_kib": 5588328,
+  "vmswap_kib": 0,
+  "nvidia_smi_compute_process_entry_present": false,
+  "vram_mib": 0
+}

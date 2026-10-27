@@ -1,0 +1,7 @@
+{
+  "reason": "The QLoRA endpoint learned the task in BF16 evaluation, but did not pass the unchanged 90% Q4 decision-agreement gate. BF16 merging itself introduced material drift; FP32 CPU merge plus F16 serialization improved Q4 agreement to 51/64, still below the gate.",
+  "next_training_comparison": "Restart from the released adapter with the same data, split, seed42, 150updates, batch8, learning_rate0.00005 and replay_fraction0.2, changing only QLoRA to BF16 LoRA.",
+  "export_numerics": "Merge adapter deltas on the CPU in FP32, serialize F16, then convert/quantize Q4_K_M. Keep the default 90% agreement gate and evaluate all64 DEV rows.",
+  "dataset_changed_after_endpoint_evaluation": false,
+  "claims": "Exploratory DEV comparison prompted by a failed deployment-compatibility gate, not an untouched final test or a prespecified single-run benchmark. Preserve every failed endpoint/export result; do not imply BF16 accuracy equals GGUF accuracy."
+}

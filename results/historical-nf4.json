@@ -1,0 +1,44 @@
+{
+  "schema_version": "openchoice-historical-benchmark-excerpt-v1",
+  "description": "Selected numeric fields from archived maintainer reports; not new GGUF measurements. Host paths and training-run identifiers omitted. Source hashes identify the full archived reports.",
+  "runtime": "PyTorch NF4 weights, BF16 compute, CPU token-table offload, RTX 4060 8 GiB",
+  "sciq": {
+    "source_sha256": "7a24b9b7031aebcdbad9ebe818065e65c88474e9102d146dd361d2244f1e937d",
+    "source_fields": "models.openchoice.quality; models.clm.quality",
+    "rows": 1000,
+    "openchoice_correct": 956,
+    "clm_correct": 587,
+    "errors": 0,
+    "dataset_sha256": "bb83f4ecfa133110fa7d337af2b22a1c224f05cc0ae0d6d535042b455fbf7f63"
+  },
+  "decision_panel": {
+    "source_sha256": "f435332a5b77c3b3a19649c39a207ff69ef5c598c4b939af9abcc3a96733af86",
+    "source_fields": "models.openchoice.overall; models.clm.overall",
+    "rows": 400,
+    "openchoice_correct": 318,
+    "clm_correct": 178,
+    "errors": 0,
+    "dataset_sha256": "87571ee31ace629d1315c55950ed3b265088f27eba1ede5418844a5fb146b3ec"
+  },
+  "jevbench_public": {
+    "source_sha256": "a73a33df037adb002f441934dd764e26af2a44a44110cf68eb84cdbd3250c289",
+    "source_fields": "overall.n_correct; overall.accuracy; run_manifest.initial_configuration_failures",
+    "rows": 231,
+    "openchoice_correct": 179,
+    "errors": 3,
+    "error_policy": "Three early configuration failures retained as incorrect; no repeated task IDs"
+  },
+  "nimble_public": {
+    "source_sha256": "9c681cf29383c7a47d90c4ddf1a52ea591ae97ec908a1823ce56c825470c9d66",
+    "rows": 3880,
+    "openchoice_correct": 2909,
+    "errors": 0
+  },
+  "nimble_evidence": {
+    "source_sha256": "9c681cf29383c7a47d90c4ddf1a52ea591ae97ec908a1823ce56c825470c9d66",
+    "rows": 324,
+    "openchoice_correct": 237,
+    "errors": 0,
+    "scope": "Synthetic/model-checked labels; in-domain for Nimble training"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "openchoice-release-benchmark-v1",
+  "runtime": "GGUF Q4_K_M, llama.cpp CPU, 12 threads, no repacking",
+  "model": "openchoice-native-f6818010c29d97b6-q4km",
+  "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+  "llama_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+  "protocol": "Sequential loopback HTTP; one attempt per row; errors count wrong; no retries, exclusions, truncation or tuning. Targets never sent to model. Dataset text omitted from public ledger.",
+  "input_sha256": {
+    "final.jsonl": "87571ee31ace629d1315c55950ed3b265088f27eba1ede5418844a5fb146b3ec"
+  },
+  "overall": {
+    "rows": 400,
+    "correct": 321,
+    "errors": 0,
+    "accuracy": 0.8025
+  },
+  "by_family": {
+    "aegis2": {
+      "rows": 100,
+      "correct": 88,
+      "errors": 0,
+      "accuracy": 0.88
+    },
+    "boolq": {
+      "rows": 100,
+      "correct": 90,
+      "errors": 0,
+      "accuracy": 0.9
+    },
+    "helpsteer2": {
+      "rows": 100,
+      "correct": 53,
+      "errors": 0,
+      "accuracy": 0.53
+    },
+    "snli": {
+      "rows": 100,
+      "correct": 90,
+      "errors": 0,
+      "accuracy": 0.9
+    }
+  },
+  "http_seconds": {
+    "total": 1391.8951368070339,
+    "median": 1.1877336444995308
+  },
+  "raw": "gguf-panel400-predictions.jsonl"
+}

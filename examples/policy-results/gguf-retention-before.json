@@ -1,0 +1,340 @@
+{
+  "runtime": "llama.cpp-Q4_K_M-cpu",
+  "model": "openchoice-gguf-6d8eef23223c2f53-q4km",
+  "summary": {
+    "rows": 24,
+    "accuracy": 1.0,
+    "brier": 0.015617787668624426,
+    "log_loss": 0.05420423919633233
+  },
+  "predictions": [
+    {
+      "id": "general-048",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9932698170883113,
+        0.006730182911688714
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 9.059072404957332e-05,
+      "log_loss": 0.006752932723752907
+    },
+    {
+      "id": "general-049",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        0.011989339289506974,
+        0.9504495067481262,
+        0.03756115396236695
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.0040098359250875385,
+      "log_loss": 0.0508202412967816
+    },
+    {
+      "id": "general-050",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        0.0046620607616624545,
+        0.9868400689035374,
+        0.008497870334800291
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.00026713239723615565,
+      "log_loss": 0.013247290263231811
+    },
+    {
+      "id": "general-051",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        0.0010789200606594088,
+        0.9989210799393405
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 2.328136994586717e-06,
+      "log_loss": 0.0010795025138927818
+    },
+    {
+      "id": "general-052",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        0.03746902491462767,
+        0.008498982052911042,
+        0.9540319930324612
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.0035892181885563866,
+      "log_loss": 0.04705807242271921
+    },
+    {
+      "id": "general-053",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        0.002579353706311005,
+        0.03629444882111723,
+        0.9611261974725717
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.002835112603712452,
+      "log_loss": 0.03964955972335369
+    },
+    {
+      "id": "general-054",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9941329264101009,
+        0.0058670735898991265
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 6.884510501858368e-05,
+      "log_loss": 0.00588435248366194
+    },
+    {
+      "id": "general-055",
+      "primitive": "choice",
+      "gold": 0,
+      "probabilities": [
+        0.6880799156239128,
+        0.20548413716517216,
+        0.10643594721091507
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 0.15084648052238533,
+      "log_loss": 0.37385029136432335
+    },
+    {
+      "id": "general-056",
+      "primitive": "score",
+      "gold": 0,
+      "probabilities": [
+        0.9604250447201789,
+        0.03673481609214214,
+        0.002840139187678963
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 0.002923690189328737,
+      "log_loss": 0.04037933759043858
+    },
+    {
+      "id": "general-057",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        0.0013398060709993772,
+        0.9986601939290005
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 3.5901606157738602e-06,
+      "log_loss": 0.0013407044136463674
+    },
+    {
+      "id": "general-058",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        0.006947674047483897,
+        0.9765226127981852,
+        0.016529713154330865
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.0008726893014584777,
+      "log_loss": 0.023757371946133487
+    },
+    {
+      "id": "general-059",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        0.003661066313391534,
+        0.9843154997450089,
+        0.012023433941599545
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.00040396991854787503,
+      "log_loss": 0.015808803498476926
+    },
+    {
+      "id": "general-060",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9946215246817826,
+        0.005378475318217491
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 5.7855993497349e-05,
+      "log_loss": 0.005392991389542098
+    },
+    {
+      "id": "general-061",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        0.02435752247929113,
+        0.007756200505237175,
+        0.9678862770154716
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.0016847387515336427,
+      "log_loss": 0.03264068102919381
+    },
+    {
+      "id": "general-062",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        0.002062880554914841,
+        0.043333242519742604,
+        0.9546038769253425
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.003942833373668121,
+      "log_loss": 0.046458813109827704
+    },
+    {
+      "id": "general-063",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        0.001167666888085145,
+        0.9988323331119149
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 2.726891923060828e-06,
+      "log_loss": 0.0011683491422146306
+    },
+    {
+      "id": "general-064",
+      "primitive": "choice",
+      "gold": 0,
+      "probabilities": [
+        0.6410031099964986,
+        0.1456373734247238,
+        0.21335951657877764
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 0.19561129488496826,
+      "log_loss": 0.4447209702846276
+    },
+    {
+      "id": "general-065",
+      "primitive": "score",
+      "gold": 0,
+      "probabilities": [
+        0.9736023486587572,
+        0.024228700462470016,
+        0.002168950878772935
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 0.0012885702703484443,
+      "log_loss": 0.026752324967073245
+    },
+    {
+      "id": "general-066",
+      "primitive": "noul",
+      "gold": 0,
+      "probabilities": [
+        0.9933766808751292,
+        0.006623319124870763
+      ],
+      "prediction": 0,
+      "accuracy": 1.0,
+      "brier": 8.773671245975806e-05,
+      "log_loss": 0.006645350638031547
+    },
+    {
+      "id": "general-067",
+      "primitive": "choice",
+      "gold": 1,
+      "probabilities": [
+        0.007095745906236287,
+        0.9724733291555668,
+        0.020430924938196995
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.0012254899115738758,
+      "log_loss": 0.027912628898444942
+    },
+    {
+      "id": "general-068",
+      "primitive": "score",
+      "gold": 1,
+      "probabilities": [
+        0.0033910468005460105,
+        0.9856132768914736,
+        0.010995676307980356
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 0.0003393818976747814,
+      "log_loss": 0.014491215421582259
+    },
+    {
+      "id": "general-069",
+      "primitive": "noul",
+      "gold": 1,
+      "probabilities": [
+        0.00174219733348629,
+        0.9982578026665136
+      ],
+      "prediction": 1,
+      "accuracy": 1.0,
+      "brier": 6.070503097613689e-06,
+      "log_loss": 0.0017437167242362083
+    },
+    {
+      "id": "general-070",
+      "primitive": "choice",
+      "gold": 2,
+      "probabilities": [
+        0.032724913592967184,
+        0.006973864852791059,
+        0.9603012215542418
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.002695547770737559,
+      "log_loss": 0.04050827128420097
+    },
+    {
+      "id": "general-071",
+      "primitive": "score",
+      "gold": 2,
+      "probabilities": [
+        0.0019082445478873754,
+        0.030396410549522582,
+        0.96769534490259
+      ],
+      "prediction": 2,
+      "accuracy": 1.0,
+      "brier": 0.0019711739125122863,
+      "log_loss": 0.032837967582588196
+    }
+  ]
+}

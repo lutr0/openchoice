@@ -1,0 +1,103 @@
+{
+  "gpu_layers": 4,
+  "profile": {
+    "layers": 4,
+    "peak_vram_mib": 1924,
+    "measurement": "gpu-measurement-4.json"
+  },
+  "cpu_before": {
+    "seconds": 0.5564592629998515,
+    "device": "cpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9985617277183656,
+      0.0014382722816343304
+    ]
+  },
+  "cpu_only_cuda_library_vram_mib": 94,
+  "initial_quiet_seconds": 62.298414472999866,
+  "gpu_before_game": {
+    "seconds": 0.5748522780013445,
+    "device": "gpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9993671168069906,
+      0.0006328831930093416
+    ]
+  },
+  "gpu4_vs_cpu": {
+    "rows": 50,
+    "decision_agreement": 0.98,
+    "max_probability_delta": 0.21916349298121296,
+    "mean_probability_delta": 0.014087880308121012
+  },
+  "gpu_prefix_batch_single_max_probability_delta": 0.0,
+  "gpu_cancel_to_return_seconds": 0.06963878799797385,
+  "inflight_when_game_starts": {
+    "seconds": 4.542288930999348,
+    "device": "gpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 3353,
+    "probabilities": [
+      0.8015450296802028,
+      0.19845497031979717
+    ]
+  },
+  "vram_after_game_release_mib": 194,
+  "cpu_during_game": {
+    "seconds": 0.5226602370021283,
+    "device": "cpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9985617277183656,
+      0.0014382722816343304
+    ]
+  },
+  "cpu_after_game_exit": {
+    "seconds": 0.5192653640006029,
+    "device": "cpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9985617277183656,
+      0.0014382722816343304
+    ]
+  },
+  "readmission_quiet_seconds": 62.6068042659972,
+  "readmission_since_release_seconds": 63.23213952899823,
+  "gpu_after_cooldown": {
+    "seconds": 0.48710462500093854,
+    "device": "gpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9993671168069906,
+      0.0006328831930093416
+    ]
+  },
+  "low_headroom_probe": {
+    "sensor_reading_injected": true,
+    "reading_mib": 1023,
+    "gpu_released": true,
+    "immediate_readmission_blocked": true,
+    "remaining_vram_mib": 194
+  },
+  "cpu_after_low_headroom": {
+    "seconds": 0.5229821259999881,
+    "device": "cpu",
+    "model": "openchoice-native-f6818010c29d97b6-q4km",
+    "input_tokens": 56,
+    "probabilities": [
+      0.9985617277183656,
+      0.0014382722816343304
+    ]
+  },
+  "peak_process_vram_mib": 1926,
+  "minimum_actual_free_vram_mib": 2951,
+  "desktop_reserve_mib": 1536,
+  "peak_rss_mib": 12651.3359375,
+  "passed": true
+}

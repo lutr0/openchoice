@@ -1,0 +1,38 @@
+[
+ {
+  "amount": "0.274",
+  "description": "Mechanical smoke rental GPU charge: hours * $/hr",
+  "instance_id": "redacted-mechanical-smoke",
+  "quantity": "0.514",
+  "rate": "0.5333",
+  "timestamp": 1790640000,
+  "type": "charge"
+ },
+ {
+  "amount": "0.058",
+  "description": "Mechanical smoke rental storage charge: hours * $/hr",
+  "instance_id": "redacted-mechanical-smoke",
+  "quantity": "0.524",
+  "rate": "0.1111",
+  "timestamp": 1790640000,
+  "type": "charge"
+ },
+ {
+  "amount": "0.218",
+  "description": "Mechanical smoke rental download charge",
+  "instance_id": "redacted-mechanical-smoke",
+  "quantity": "21.800",
+  "rate": "0.010",
+  "timestamp": 1790640000,
+  "type": "charge"
+ },
+ {
+  "amount": "0.069",
+  "description": "Mechanical smoke rental upload charge",
+  "instance_id": "redacted-mechanical-smoke",
+  "quantity": "6.860",
+  "rate": "0.010",
+  "timestamp": 1790640000,
+  "type": "charge"
+ }
+]

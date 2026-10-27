@@ -1,0 +1,9 @@
+{
+  "instance_id": "redacted-policy-tutorial",
+  "label": "openchoice-policy-finetune",
+  "command": "vastai destroy instance [ID REDACTED] --yes --raw",
+  "command_stdout": "",
+  "subsequent_show_instances": [],
+  "retrieval_verified_before_destruction": true,
+  "verification": "retrieval.json"
+}

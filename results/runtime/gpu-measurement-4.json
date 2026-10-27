@@ -1,0 +1,636 @@
+{
+  "layers": 4,
+  "pid": 272054,
+  "before": {
+    "used_mib": 3167,
+    "total_mib": 8188,
+    "free_mib": 5021
+  },
+  "estimated_required_mib": 1331,
+  "load_seconds": 0.7868193800004519,
+  "after_load_mib": 1816,
+  "system_info": "CUDA : ARCHS = 890 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | ",
+  "ctx": 4096,
+  "ubatch": 512,
+  "batch": 4096,
+  "repack": false,
+  "latency": [
+    {
+      "tokens": 150,
+      "seconds": [
+        0.4512445830005163,
+        0.4270968660002836
+      ],
+      "median_seconds": 0.43917072450039996,
+      "answer_logits": [
+        [
+          21.86152458190918,
+          16.262367248535156,
+          14.25643539428711,
+          12.319811820983887
+        ],
+        [
+          21.86152458190918,
+          16.262367248535156,
+          14.25643539428711,
+          12.319811820983887
+        ]
+      ]
+    },
+    {
+      "tokens": 600,
+      "seconds": [
+        1.0085114560006332,
+        1.027343044999725
+      ],
+      "median_seconds": 1.017927250500179,
+      "answer_logits": [
+        [
+          22.20217514038086,
+          16.51177406311035,
+          14.814445495605469,
+          12.808013916015625
+        ],
+        [
+          22.20217514038086,
+          16.51177406311035,
+          14.814445495605469,
+          12.808013916015625
+        ]
+      ]
+    },
+    {
+      "tokens": 2000,
+      "seconds": [
+        2.438383528999111,
+        2.423850766999749
+      ],
+      "median_seconds": 2.43111714799943,
+      "answer_logits": [
+        [
+          22.05722427368164,
+          16.569581985473633,
+          14.719152450561523,
+          12.633050918579102
+        ],
+        [
+          22.05722427368164,
+          16.569581985473633,
+          14.719152450561523,
+          12.633050918579102
+        ]
+      ]
+    },
+    {
+      "tokens": 3700,
+      "seconds": [
+        4.6819377039992105,
+        4.7313125590007985
+      ],
+      "median_seconds": 4.7066251315000045,
+      "answer_logits": [
+        [
+          22.125648498535156,
+          16.29836654663086,
+          14.285449981689453,
+          12.567270278930664
+        ],
+        [
+          22.125648498535156,
+          16.29836654663086,
+          14.285449981689453,
+          12.567270278930664
+        ]
+      ]
+    }
+  ],
+  "parity_rows": [],
+  "release": {
+    "pid_still_running": 272054,
+    "before_mib": 1924,
+    "close_seconds": 0.10794699399957608,
+    "samples": [
+      {
+        "seconds_after_close_started": 0.10798244400029944,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 0.12870887499957462,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 0.14964875700025004,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 0.2500648290006211,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 0.5000667670010444,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 1.0000710940003046,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 2.00006276699969,
+        "process_mib": 192
+      },
+      {
+        "seconds_after_close_started": 5.000036454999645,
+        "process_mib": 192
+      }
+    ],
+    "backend_free_called": false,
+    "process_exited": false
+  },
+  "peak_anonymous_mib": 499.45703125,
+  "vram_samples": [
+    {
+      "used_mib": 3170,
+      "total_mib": 8188,
+      "free_mib": 5018,
+      "monotonic": 11856.521243741,
+      "process_mib": 0
+    },
+    {
+      "used_mib": 3269,
+      "total_mib": 8188,
+      "free_mib": 4919,
+      "monotonic": 11856.86481031,
+      "process_mib": 94
+    },
+    {
+      "used_mib": 4450,
+      "total_mib": 8188,
+      "free_mib": 3738,
+      "monotonic": 11857.208441791,
+      "process_mib": 1816
+    },
+    {
+      "used_mib": 4970,
+      "total_mib": 8188,
+      "free_mib": 3218,
+      "monotonic": 11857.552946312,
+      "process_mib": 1828
+    },
+    {
+      "used_mib": 4990,
+      "total_mib": 8188,
+      "free_mib": 3198,
+      "monotonic": 11857.898715185,
+      "process_mib": 1838
+    },
+    {
+      "used_mib": 4999,
+      "total_mib": 8188,
+      "free_mib": 3189,
+      "monotonic": 11858.243780997,
+      "process_mib": 1872
+    },
+    {
+      "used_mib": 4999,
+      "total_mib": 8188,
+      "free_mib": 3189,
+      "monotonic": 11858.586183395,
+      "process_mib": 1872
+    },
+    {
+      "used_mib": 5022,
+      "total_mib": 8188,
+      "free_mib": 3166,
+      "monotonic": 11858.93287067,
+      "process_mib": 1878
+    },
+    {
+      "used_mib": 5013,
+      "total_mib": 8188,
+      "free_mib": 3175,
+      "monotonic": 11859.277152591,
+      "process_mib": 1878
+    },
+    {
+      "used_mib": 5019,
+      "total_mib": 8188,
+      "free_mib": 3169,
+      "monotonic": 11859.619240218,
+      "process_mib": 1878
+    },
+    {
+      "used_mib": 5030,
+      "total_mib": 8188,
+      "free_mib": 3158,
+      "monotonic": 11859.965367482,
+      "process_mib": 1894
+    },
+    {
+      "used_mib": 5046,
+      "total_mib": 8188,
+      "free_mib": 3142,
+      "monotonic": 11860.312313117,
+      "process_mib": 1922
+    },
+    {
+      "used_mib": 5063,
+      "total_mib": 8188,
+      "free_mib": 3125,
+      "monotonic": 11860.657571049,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5054,
+      "total_mib": 8188,
+      "free_mib": 3134,
+      "monotonic": 11861.0018144,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5053,
+      "total_mib": 8188,
+      "free_mib": 3135,
+      "monotonic": 11861.34559626,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5053,
+      "total_mib": 8188,
+      "free_mib": 3135,
+      "monotonic": 11861.687741518,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5053,
+      "total_mib": 8188,
+      "free_mib": 3135,
+      "monotonic": 11862.029130524,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5044,
+      "total_mib": 8188,
+      "free_mib": 3144,
+      "monotonic": 11862.373375805,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5048,
+      "total_mib": 8188,
+      "free_mib": 3140,
+      "monotonic": 11862.718059487,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5003,
+      "total_mib": 8188,
+      "free_mib": 3185,
+      "monotonic": 11863.061360906,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5003,
+      "total_mib": 8188,
+      "free_mib": 3185,
+      "monotonic": 11863.4015608,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5011,
+      "total_mib": 8188,
+      "free_mib": 3177,
+      "monotonic": 11863.743436208,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11864.084946035,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5011,
+      "total_mib": 8188,
+      "free_mib": 3177,
+      "monotonic": 11864.426589061,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5011,
+      "total_mib": 8188,
+      "free_mib": 3177,
+      "monotonic": 11864.76959331,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5006,
+      "total_mib": 8188,
+      "free_mib": 3182,
+      "monotonic": 11865.112435789,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4991,
+      "total_mib": 8188,
+      "free_mib": 3197,
+      "monotonic": 11865.457882082,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4991,
+      "total_mib": 8188,
+      "free_mib": 3197,
+      "monotonic": 11865.801194631,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11866.145541762,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11866.487525129,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11866.833197603,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4982,
+      "total_mib": 8188,
+      "free_mib": 3206,
+      "monotonic": 11867.180070627,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4982,
+      "total_mib": 8188,
+      "free_mib": 3206,
+      "monotonic": 11867.524204938,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11867.866862136,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11868.21252627,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4983,
+      "total_mib": 8188,
+      "free_mib": 3205,
+      "monotonic": 11868.554369117,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4991,
+      "total_mib": 8188,
+      "free_mib": 3197,
+      "monotonic": 11868.898406457,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4993,
+      "total_mib": 8188,
+      "free_mib": 3195,
+      "monotonic": 11869.242123797,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4993,
+      "total_mib": 8188,
+      "free_mib": 3195,
+      "monotonic": 11869.588719811,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4996,
+      "total_mib": 8188,
+      "free_mib": 3192,
+      "monotonic": 11869.933829294,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4988,
+      "total_mib": 8188,
+      "free_mib": 3200,
+      "monotonic": 11870.278306645,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4994,
+      "total_mib": 8188,
+      "free_mib": 3194,
+      "monotonic": 11870.625657541,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4995,
+      "total_mib": 8188,
+      "free_mib": 3193,
+      "monotonic": 11870.972060125,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4989,
+      "total_mib": 8188,
+      "free_mib": 3199,
+      "monotonic": 11871.315464454,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4993,
+      "total_mib": 8188,
+      "free_mib": 3195,
+      "monotonic": 11871.660784877,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 4994,
+      "total_mib": 8188,
+      "free_mib": 3194,
+      "monotonic": 11872.005759938,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11872.352166723,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11872.696936274,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11873.039816123,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11873.385201626,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5010,
+      "total_mib": 8188,
+      "free_mib": 3178,
+      "monotonic": 11873.730927769,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5011,
+      "total_mib": 8188,
+      "free_mib": 3177,
+      "monotonic": 11874.070646563,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5061,
+      "total_mib": 8188,
+      "free_mib": 3127,
+      "monotonic": 11874.411084868,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5068,
+      "total_mib": 8188,
+      "free_mib": 3120,
+      "monotonic": 11874.759199764,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 5061,
+      "total_mib": 8188,
+      "free_mib": 3127,
+      "monotonic": 11875.105028898,
+      "process_mib": 1924
+    },
+    {
+      "used_mib": 3330,
+      "total_mib": 8188,
+      "free_mib": 4858,
+      "monotonic": 11875.447367866,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3330,
+      "total_mib": 8188,
+      "free_mib": 4858,
+      "monotonic": 11875.788343012,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3365,
+      "total_mib": 8188,
+      "free_mib": 4823,
+      "monotonic": 11876.130072999,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3365,
+      "total_mib": 8188,
+      "free_mib": 4823,
+      "monotonic": 11876.469936353,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3365,
+      "total_mib": 8188,
+      "free_mib": 4823,
+      "monotonic": 11876.810603458,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3294,
+      "total_mib": 8188,
+      "free_mib": 4894,
+      "monotonic": 11877.152770256,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3291,
+      "total_mib": 8188,
+      "free_mib": 4897,
+      "monotonic": 11877.49283178,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3291,
+      "total_mib": 8188,
+      "free_mib": 4897,
+      "monotonic": 11877.831603103,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3380,
+      "total_mib": 8188,
+      "free_mib": 4808,
+      "monotonic": 11878.172541699,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3418,
+      "total_mib": 8188,
+      "free_mib": 4770,
+      "monotonic": 11878.513311124,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3419,
+      "total_mib": 8188,
+      "free_mib": 4769,
+      "monotonic": 11878.852242387,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3358,
+      "total_mib": 8188,
+      "free_mib": 4830,
+      "monotonic": 11879.193753934,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3451,
+      "total_mib": 8188,
+      "free_mib": 4737,
+      "monotonic": 11879.534562329,
+      "process_mib": 192
+    },
+    {
+      "used_mib": 3401,
+      "total_mib": 8188,
+      "free_mib": 4787,
+      "monotonic": 11879.873873953,
+      "process_mib": 192
+    }
+  ],
+  "peak_process_vram_mib": 1924
+}

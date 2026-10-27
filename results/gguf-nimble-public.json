@@ -1,0 +1,126 @@
+{
+  "schema_version": "openchoice-release-benchmark-v1",
+  "runtime": "GGUF Q4_K_M, llama.cpp CPU, 12 threads, no repacking",
+  "model": "openchoice-native-f6818010c29d97b6-q4km",
+  "gguf_sha256": "6d8eef23223c2f53a772fa5a945842569e2cd646261bcb0a354e6c0f4e5ee238",
+  "llama_commit": "4364bf7232e65c34eca8d9500c5464389662de6b",
+  "protocol": "Sequential loopback HTTP; at most one attempt per row; errors count wrong; no retries, exclusions, truncation or tuning. Targets never sent to model. Dataset text omitted from public ledger. Interrupted boundary counted wrong without resubmission.",
+  "input_sha256": {
+    "aegis2": "2d10424f7d2b06e9c38fe443f9cfb10eb958b4eb37cbec2bed4d990d109374b2",
+    "boolq": "2c239fdc3e4d5f2d015a7ab9def82d0c2ff6fb49d39c96dc233d3e5911583b58",
+    "civil_comments": "7f76c916faa51a8e67325dd4a8a1b70ee678ef124f1a551f5a32f26ebd66234e",
+    "helpsteer2": "c2395b2f794217ee080ec3ef89fbd6d67fd8c8c6f9f1c8d47d127301929a2ca3",
+    "massive-de-DE": "6eacfdfd5f55ee664ddf5d385deda17cbed248c18aabc06be0c643518b74ab28",
+    "massive-en-US": "f173a34108c1f785f5e5bf1d83534c34393651e7f7b0b2eba19deb0d5d0f2681",
+    "multinli": "e0349ce46c796b08ecddbfc3b525dd4528e02595cc64921911babc7e3620b2f1",
+    "paws": "ffc7388bbf027272b1c2175cd8d4d3591b63006696b2f9889bf70fccd457d167",
+    "pubmedqa": "8ee766a759a60280373f45a19a62c9e36462b1176508f193621095e102403a40",
+    "squad2": "95316d9d810d4827d86053e9199e15e865bad3fa4b65cbcb742a54433fcdfdd7",
+    "summeval-consistency": "86cc3627a2ddd8ca5ab10c1af43a9ee9e007b8d7d25dbf952f1a7452246e9e00",
+    "summeval-relevance": "e10be11770eeaf34b6b39e529796de89d2a2341e05805071c47e716bc90f2255",
+    "vitaminc-dev": "6144a345cb8846b6594f07a0037b1221b2d9633b20d8a9bfd14f9111d15965bc"
+  },
+  "overall": {
+    "rows": 3880,
+    "correct": 2926,
+    "errors": 1,
+    "accuracy": 0.7541237113402062
+  },
+  "micro_accuracy": 0.7541237113402062,
+  "macro_accuracy": 0.7471626321348416,
+  "macro_definition": "Unweighted mean of accuracy over the 13 frozen subsets, with the boundary infrastructure error counted wrong",
+  "by_family": {
+    "aegis2": {
+      "rows": 250,
+      "correct": 203,
+      "errors": 0,
+      "accuracy": 0.812
+    },
+    "boolq": {
+      "rows": 300,
+      "correct": 255,
+      "errors": 1,
+      "accuracy": 0.85
+    },
+    "civil_comments": {
+      "rows": 300,
+      "correct": 244,
+      "errors": 0,
+      "accuracy": 0.8133333333333334
+    },
+    "helpsteer2": {
+      "rows": 249,
+      "correct": 103,
+      "errors": 0,
+      "accuracy": 0.41365461847389556
+    },
+    "massive-de-DE": {
+      "rows": 350,
+      "correct": 291,
+      "errors": 0,
+      "accuracy": 0.8314285714285714
+    },
+    "massive-en-US": {
+      "rows": 350,
+      "correct": 296,
+      "errors": 0,
+      "accuracy": 0.8457142857142858
+    },
+    "multinli": {
+      "rows": 299,
+      "correct": 234,
+      "errors": 0,
+      "accuracy": 0.782608695652174
+    },
+    "paws": {
+      "rows": 250,
+      "correct": 204,
+      "errors": 0,
+      "accuracy": 0.816
+    },
+    "pubmedqa": {
+      "rows": 250,
+      "correct": 193,
+      "errors": 0,
+      "accuracy": 0.772
+    },
+    "squad2": {
+      "rows": 299,
+      "correct": 235,
+      "errors": 0,
+      "accuracy": 0.7859531772575251
+    },
+    "summeval-consistency": {
+      "rows": 144,
+      "correct": 120,
+      "errors": 0,
+      "accuracy": 0.8333333333333334
+    },
+    "summeval-relevance": {
+      "rows": 240,
+      "correct": 97,
+      "errors": 0,
+      "accuracy": 0.4041666666666667
+    },
+    "vitaminc-dev": {
+      "rows": 599,
+      "correct": 451,
+      "errors": 0,
+      "accuracy": 0.7529215358931552
+    }
+  },
+  "interruption": {
+    "executor_time_limit_seconds": 3600,
+    "completed_before": 425,
+    "conservative_boundary_errors": 1,
+    "boundary_id": "boolq-93f2658e6759e240",
+    "boundary_policy": "One-hour executor termination interrupted the benchmark. First unrecorded row conservatively counts wrong and is not resubmitted; its response/timing cannot be recovered."
+  },
+  "http_seconds": {
+    "known_rows": 3879,
+    "total": 11666.717326190774,
+    "median": 1.6370471959962742,
+    "note": "Interrupted boundary timing is unknown and excluded from timing totals, not accuracy denominator"
+  },
+  "raw": "gguf-nimble-public-predictions.jsonl"
+}

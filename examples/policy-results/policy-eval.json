@@ -1,0 +1,2641 @@
+{
+  "schema_version": "openchoice-finetune-eval-v1",
+  "data_sha256": "5096d6c27995af7c1f1f8b7145ff16a44a1a8cbd93c8112eae7abde5d04572bf",
+  "retention_sha256": "fd94d1e04228d61a709afccda900963c32e94d174f6c8d54fe0d1106fa28d6bd",
+  "runtime": "bfloat16",
+  "before": {
+    "dev": {
+      "summary": {
+        "rows": 64,
+        "accuracy": 0.4375,
+        "brier": 0.8107676065010146,
+        "log_loss": 1.5479310064975316
+      },
+      "predictions": [
+        {
+          "id": "dev-revenue-00-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.8862550468625052,
+            0.05665638962957035,
+            0.02676258346007192,
+            0.03032598004785233
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.017783761789428622,
+          "log_loss": 0.1207505065257741
+        },
+        {
+          "id": "dev-revenue-00-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.883108182179486,
+            0.056455217300878,
+            0.03021830025981797,
+            0.03021830025981797
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.6719831097322744,
+          "log_loss": 2.8743075692581663
+        },
+        {
+          "id": "dev-revenue-01-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.03534647057947982,
+            0.040052798458509654,
+            0.013003239844161863,
+            0.9115974911178486
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.010837687469887681,
+          "log_loss": 0.09255673378876039
+        },
+        {
+          "id": "dev-revenue-01-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.03540055983678378,
+            0.04011408961675117,
+            0.011492879096878753,
+            0.9129924714495863
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.76574855934253,
+          "log_loss": 3.341027644369046
+        },
+        {
+          "id": "dev-revenue-02-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04827261989598056,
+            0.0702362475097795,
+            0.8556526611103631,
+            0.025838471483876788
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.028767157149019625,
+          "log_loss": 0.1558907549180931
+        },
+        {
+          "id": "dev-revenue-02-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.04810711446409631,
+            0.06999543852731523,
+            0.8527190071358088,
+            0.0291784398727795
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.676837862615223,
+          "log_loss": 3.5343252029515337
+        },
+        {
+          "id": "dev-revenue-03-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.13497121962860537,
+            0.7767057416585297,
+            0.049653136851199355,
+            0.03866990186166569
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.07203835124545531,
+          "log_loss": 0.25269371120774237
+        },
+        {
+          "id": "dev-revenue-03-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.11960198686846253,
+            0.7799029228013414,
+            0.05649597823803174,
+            0.04399911209216418
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.5146889652028663,
+          "log_loss": 2.873585824991031
+        },
+        {
+          "id": "dev-revenue-04-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.3467212538118377,
+            0.05317142638274639,
+            0.5716467061633947,
+            0.02846061364202116
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 0.7571902840010921,
+          "log_loss": 1.0592341249920498
+        },
+        {
+          "id": "dev-revenue-04-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.317720634000012,
+            0.05521156748575765,
+            0.5935802900633251,
+            0.033487508450905173
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.3470305574559993,
+          "log_loss": 2.8965827917514515
+        },
+        {
+          "id": "dev-revenue-05-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.16070717476346347,
+            0.2338275595483862,
+            0.11045231823971552,
+            0.49501294744843477
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.3477137614740531,
+          "log_loss": 0.7031713602940366
+        },
+        {
+          "id": "dev-revenue-05-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.17063208459402665,
+            0.24826821814271546,
+            0.11727360235922873,
+            0.46382609490402926
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 0.9783759913688408,
+          "log_loss": 1.7682455924747107
+        },
+        {
+          "id": "dev-revenue-06-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.01703137945066258,
+            0.03605543057998945,
+            0.9298818105186853,
+            0.01703137945066258
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.006796690342430887,
+          "log_loss": 0.07269778637465642
+        },
+        {
+          "id": "dev-revenue-06-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.019211947341920152,
+            0.035892642955943056,
+            0.9256834623602165,
+            0.019211947341920152
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.8204924574630583,
+          "log_loss": 3.952222936078581
+        },
+        {
+          "id": "dev-revenue-07-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.03619177686702878,
+            0.9333982276078767,
+            0.01331421064884408,
+            0.017095784876250384
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.006215174864301818,
+          "log_loss": 0.06892334432415274
+        },
+        {
+          "id": "dev-revenue-07-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04065017336468039,
+            0.9251936813137999,
+            0.014954363060920867,
+            0.019201782260598686
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.828319399832259,
+          "log_loss": 4.202752178183626
+        },
+        {
+          "id": "dev-identity-00-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.13429491215095396,
+            0.6820058384638312,
+            0.13429491215095396,
+            0.04940433723426088
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.13963132216791246,
+          "log_loss": 0.38271706037791187
+        },
+        {
+          "id": "dev-identity-00-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.13725765020918754,
+            0.6970518638209425,
+            0.12112945116564784,
+            0.04456103480422204
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.279120090828416,
+          "log_loss": 2.110895460916817
+        },
+        {
+          "id": "dev-identity-01-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.35580393709521596,
+            0.586621519287733,
+            0.03750145906589412,
+            0.020073084551156924
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 0.7609226625089414,
+          "log_loss": 1.0333754383388418
+        },
+        {
+          "id": "dev-identity-01-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.35580393709521596,
+            0.586621519287733,
+            0.03750145906589412,
+            0.020073084551156924
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.29928749812390737,
+          "log_loss": 0.5333754383388417
+        },
+        {
+          "id": "dev-identity-02-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.07779397184157287,
+            0.06058600618845177,
+            0.025256004903972618,
+            0.8363640170660027
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.037137166895239486,
+          "log_loss": 0.17869133355586758
+        },
+        {
+          "id": "dev-identity-02-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.08655729378672279,
+            0.06741088818164137,
+            0.02479907987313281,
+            0.8212327381585031
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.5139600099655395,
+          "log_loss": 2.446948728389299
+        },
+        {
+          "id": "dev-identity-03-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.07797134677933241,
+            0.06880947202311023,
+            0.7397715410474102,
+            0.11344764015014723
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.09140349226315914,
+          "log_loss": 0.3014138687646291
+        },
+        {
+          "id": "dev-identity-03-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.07001707050100156,
+            0.06178984784518113,
+            0.7527544482067056,
+            0.11543863344711176
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.3578084459511675,
+          "log_loss": 2.159016202362821
+        },
+        {
+          "id": "dev-identity-04-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.009451164955572465,
+            0.9640450343304215,
+            0.020008116367956037,
+            0.00649568434604991
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0018246027110351943,
+          "log_loss": 0.03661726935235914
+        },
+        {
+          "id": "dev-identity-04-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.009473437154550679,
+            0.9663168603888491,
+            0.01769871066697752,
+            0.006510991789622736
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.8988162367226866,
+          "log_loss": 4.034263485729169
+        },
+        {
+          "id": "dev-identity-05-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.8218754629472644,
+            0.07644632638081737,
+            0.08662503648106493,
+            0.015053174190853323
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.04530288651593982,
+          "log_loss": 0.19616640033432367
+        },
+        {
+          "id": "dev-identity-05-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.7927141039976108,
+            0.08355145186060126,
+            0.10728218779017432,
+            0.01645225635161357
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.480053736619652,
+          "log_loss": 2.4822926469450812
+        },
+        {
+          "id": "dev-identity-06-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.11627599118320164,
+            0.10261320206412917,
+            0.02289610020991233,
+            0.7582147065427568
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.08303393490051734,
+          "log_loss": 0.2767886794344188
+        },
+        {
+          "id": "dev-identity-06-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.11627599118320164,
+            0.10261320206412917,
+            0.02289610020991233,
+            0.7582147065427568
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.3669113656196277,
+          "log_loss": 2.1517886794344188
+        },
+        {
+          "id": "dev-identity-07-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.01332123301828504,
+            0.011755946877244189,
+            0.933890533713186,
+            0.041032286391284783
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.006369767595331849,
+          "log_loss": 0.06839604921381565
+        },
+        {
+          "id": "dev-identity-07-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.01332123301828504,
+            0.011755946877244189,
+            0.933890533713186,
+            0.041032286391284783
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.7920862622391343,
+          "log_loss": 3.1933960492138156
+        },
+        {
+          "id": "dev-reliability-00-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04083109470677889,
+            0.0524281633946884,
+            0.7237484710212233,
+            0.18299227087730935
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.11421696907584054,
+          "log_loss": 0.3233113626757842
+        },
+        {
+          "id": "dev-reliability-00-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.03208911116367575,
+            0.052906000133413136,
+            0.7303448037297773,
+            0.1846600849731338
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.2020114652764957,
+          "log_loss": 1.689238522477825
+        },
+        {
+          "id": "dev-reliability-01-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.061764377634893675,
+            0.8526309331171531,
+            0.06998820897161506,
+            0.015616480276338239
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.030674704069822478,
+          "log_loss": 0.15942849438357976
+        },
+        {
+          "id": "dev-reliability-01-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.06043731085227003,
+            0.8343113412665597,
+            0.08793576841266434,
+            0.01731557946850579
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.5318890745423868,
+          "log_loss": 2.4311486354153824
+        },
+        {
+          "id": "dev-reliability-02-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.764452564316651,
+            0.15052963505373365,
+            0.055376758023308686,
+            0.02964104260630666
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.08208694222237264,
+          "log_loss": 0.2685953035215278
+        },
+        {
+          "id": "dev-reliability-02-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.7513176486954601,
+            0.16764162727575974,
+            0.04803013036795325,
+            0.03301059366082697
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.260695262602423,
+          "log_loss": 1.785926749006501
+        },
+        {
+          "id": "dev-reliability-03-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.14034519848823399,
+            0.027635608141183276,
+            0.024388338585635872,
+            0.8076308547849468
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.05806118066577268,
+          "log_loss": 0.21365018774460603
+        },
+        {
+          "id": "dev-reliability-03-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.13989093491419008,
+            0.027546158339834047,
+            0.027546158339834047,
+            0.8050167484061418
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.3893571507357496,
+          "log_loss": 1.9668921963065367
+        },
+        {
+          "id": "dev-reliability-04-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.03505476348689961,
+            0.03972225101780375,
+            0.5483487610128511,
+            0.3768742244824456
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.34882971642691535,
+          "log_loss": 0.6008437692608259
+        },
+        {
+          "id": "dev-reliability-04-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.032509263887387466,
+            0.04174272110921443,
+            0.5762404902804595,
+            0.3495075247229385
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 0.7579928700348444,
+          "log_loss": 1.0512301875745491
+        },
+        {
+          "id": "dev-reliability-05-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.07914389015605076,
+            0.8508770066650805,
+            0.05439474718606406,
+            0.015584355992804678
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.031703083163345774,
+          "log_loss": 0.16148768886207296
+        },
+        {
+          "id": "dev-reliability-05-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.08723378640509814,
+            0.8276511214168949,
+            0.06793774116257412,
+            0.017177351015432725
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.5616512280102461,
+          "log_loss": 2.6891635643359093
+        },
+        {
+          "id": "dev-reliability-06-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.22791710817504618,
+            0.10766041869934749,
+            0.6195429335471625,
+            0.04487953957844385
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 0.9935503771842992,
+          "log_loss": 1.478773276767649
+        },
+        {
+          "id": "dev-reliability-06-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.20779695948188145,
+            0.11122569737417459,
+            0.6400596957500286,
+            0.04091764739391531
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.244450005369809,
+          "log_loss": 2.1961938323688055
+        },
+        {
+          "id": "dev-reliability-07-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.04078508608169715,
+            0.01926551051565682,
+            0.011685122802762007,
+            0.928264280599884
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.007317138674888142,
+          "log_loss": 0.07443880161033878
+        },
+        {
+          "id": "dev-reliability-07-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.045646878267872004,
+            0.02443301326909362,
+            0.013078049585438494,
+            0.9168420588775958
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.7521572494051336,
+          "log_loss": 3.0868200583348333
+        },
+        {
+          "id": "dev-developer-00-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.059168881504317795,
+            0.059168881504317795,
+            0.16083769540343354,
+            0.720824541587931
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.11080961391922056,
+          "log_loss": 0.3273595255596126
+        },
+        {
+          "id": "dev-developer-00-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.05295266429728792,
+            0.05295266429728792,
+            0.16310568876360654,
+            0.7309889826418176
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.4606509991685566,
+          "log_loss": 2.9383568909713573
+        },
+        {
+          "id": "dev-developer-01-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04329329688155682,
+            0.15110845387584657,
+            0.7673920488419473,
+            0.03820620040064922
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.08027424707862504,
+          "log_loss": 0.2647574623880035
+        },
+        {
+          "id": "dev-developer-01-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.04348853198727803,
+            0.15178989135214987,
+            0.7708526738942542,
+            0.03386890276631797
+          ],
+          "prediction": 2,
+          "accuracy": 0.0,
+          "brier": 1.5525545654229858,
+          "log_loss": 3.385258008121016
+        },
+        {
+          "id": "dev-developer-02-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.07063691296131172,
+            0.8605337655539169,
+            0.025985868066283165,
+            0.04284345341848826
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.026951230863254187,
+          "log_loss": 0.1502024246420325
+        },
+        {
+          "id": "dev-developer-02-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0637039665761383,
+            0.87940613254704,
+            0.01825149200308485,
+            0.03863840887373673
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.7427364009133388,
+          "log_loss": 4.003508448701589
+        },
+        {
+          "id": "dev-developer-03-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.3282902545452285,
+            0.03460153826028414,
+            0.023781266275968917,
+            0.6133269409185184
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 0.8291267336710482,
+          "log_loss": 1.1138571395169883
+        },
+        {
+          "id": "dev-developer-03-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.3548555147056104,
+            0.03740149608147258,
+            0.022685154092535038,
+            0.5850578351203819
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.395325602715121,
+          "log_loss": 3.2860445731833052
+        },
+        {
+          "id": "dev-developer-04-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.04758247329132913,
+            0.05391800600316319,
+            0.2416437381987986,
+            0.6568557825067092
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.1813108933456496,
+          "log_loss": 0.42029079371538836
+        },
+        {
+          "id": "dev-developer-04-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.05802920430704803,
+            0.05802920430704803,
+            0.2600688507033117,
+            0.6238727406825922
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.3475293721638726,
+          "log_loss": 2.846808872625341
+        },
+        {
+          "id": "dev-developer-05-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.5410039549612067,
+            0.15500022821671994,
+            0.28957854976695896,
+            0.014417267055114475
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 0.8216168445714582,
+          "log_loss": 1.239328689698039
+        },
+        {
+          "id": "dev-developer-05-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.5209189176230202,
+            0.1492457686742135,
+            0.3159532947626814,
+            0.01388201894008481
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.365885975245773,
+          "log_loss": 4.277160877702846
+        },
+        {
+          "id": "dev-developer-06-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.07325347528806149,
+            0.4776726622890208,
+            0.3282992995627847,
+            0.12077456286013316
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.4005588444894892,
+          "log_loss": 0.7388295880047835
+        },
+        {
+          "id": "dev-developer-06-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.07879423911019254,
+            0.4534295392373494,
+            0.353131280225754,
+            0.11464494142670385
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 0.6433894823870535,
+          "log_loss": 1.0409153925294778
+        },
+        {
+          "id": "dev-developer-07-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.7187312033721928,
+            0.05899704983975957,
+            0.0405480398351634,
+            0.18172370695288426
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.11726043704942161,
+          "log_loss": 0.3302678390425346
+        },
+        {
+          "id": "dev-developer-07-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.706533680541208,
+            0.05118112815492055,
+            0.03985990268553005,
+            0.20242528861834125
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.4420119026227938,
+          "log_loss": 2.9723844056071407
+        }
+      ]
+    },
+    "retention": {
+      "summary": {
+        "rows": 24,
+        "accuracy": 1.0,
+        "brier": 0.01250562689039589,
+        "log_loss": 0.04316440556562051
+      },
+      "predictions": [
+        {
+          "id": "general-048",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9953904278206259,
+            0.004609572179374208
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 4.249631135372017e-05,
+          "log_loss": 0.004620229018803795
+        },
+        {
+          "id": "general-049",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.015321752697897659,
+            0.9479232732948419,
+            0.036754974007260424
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.004297669684333647,
+          "log_loss": 0.05348171534555059
+        },
+        {
+          "id": "general-050",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            0.0017074196056125533,
+            0.991562861919464,
+            0.00672971847492353
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.00011938969145138846,
+          "log_loss": 0.008472932205544714
+        },
+        {
+          "id": "general-051",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            0.0010322310367548194,
+            0.9989677689632452
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.1310018264797367e-06,
+          "log_loss": 0.0010327641541098087
+        },
+        {
+          "id": "general-052",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04703821333970349,
+            0.008174015824903607,
+            0.944787770835393
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.005327798298222314,
+          "log_loss": 0.0567949578370801
+        },
+        {
+          "id": "general-053",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            0.000730343566217887,
+            0.004188704113937582,
+            0.9950809523198444
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 4.2275673958477755e-05,
+          "log_loss": 0.004931186017596111
+        },
+        {
+          "id": "general-054",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9947798743064417,
+            0.005220125693558396
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 5.449942451309649e-05,
+          "log_loss": 0.005233798151742976
+        },
+        {
+          "id": "general-055",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.6984180052295147,
+            0.2569336254679073,
+            0.04464836930257798
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.15896006434720727,
+          "log_loss": 0.35893749410533404
+        },
+        {
+          "id": "general-056",
+          "primitive": "score",
+          "gold": 0,
+          "probabilities": [
+            0.992325838078753,
+            0.005605271473693078,
+            0.0020688904475539525
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 9.459213717129536e-05,
+          "log_loss": 0.007703759825152538
+        },
+        {
+          "id": "general-057",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            0.0011695102650555148,
+            0.9988304897349445
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.735508520140448e-06,
+          "log_loss": 0.0011701946758545612
+        },
+        {
+          "id": "general-058",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.012258960036313521,
+            0.9738498183623299,
+            0.013891221601356711
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0010270801384330715,
+          "log_loss": 0.026498177821284025
+        },
+        {
+          "id": "general-059",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            0.0017780617160107236,
+            0.9902855345601812,
+            0.007936403723808046
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.00016051884631465105,
+          "log_loss": 0.009761958690534984
+        },
+        {
+          "id": "general-060",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9953904278206259,
+            0.004609572179374208
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 4.249631135372017e-05,
+          "log_loss": 0.004620229018803795
+        },
+        {
+          "id": "general-061",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.03705453282548106,
+            0.007296470132574274,
+            0.9556489970419448
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.0033932883426956197,
+          "log_loss": 0.045364591255617925
+        },
+        {
+          "id": "general-062",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            0.000730343566217887,
+            0.004188704113937582,
+            0.9950809523198444
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 4.2275673958477755e-05,
+          "log_loss": 0.004931186017596111
+        },
+        {
+          "id": "general-063",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            0.0011695102650555148,
+            0.9988304897349445
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.735508520140448e-06,
+          "log_loss": 0.0011701946758545612
+        },
+        {
+          "id": "general-064",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.735865195628634,
+            0.21082890839006582,
+            0.053305895981300165
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.11705754203961577,
+          "log_loss": 0.30670833514202556
+        },
+        {
+          "id": "general-065",
+          "primitive": "score",
+          "gold": 0,
+          "probabilities": [
+            0.9929768338210201,
+            0.0049529184767613576,
+            0.002070247702218592
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 7.81421901635527e-05,
+          "log_loss": 0.007047944694478691
+        },
+        {
+          "id": "general-066",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9947798743064417,
+            0.005220125693558396
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 5.449942451309649e-05,
+          "log_loss": 0.005233798151742976
+        },
+        {
+          "id": "general-067",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.017401474074761596,
+            0.9500882923317036,
+            0.03251023359353498
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0038509051506462923,
+          "log_loss": 0.05120035940960932
+        },
+        {
+          "id": "general-068",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            0.0015073015476412034,
+            0.9917616309358634,
+            0.006731067516495454
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.00011544995270406402,
+          "log_loss": 0.008272491967166168
+        },
+        {
+          "id": "general-069",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            0.0015011822567369917,
+            0.998498817743263
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 4.50709633588399e-06,
+          "log_loss": 0.0015023101597543026
+        },
+        {
+          "id": "general-070",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.04703821333970349,
+            0.008174015824903607,
+            0.944787770835393
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.005327798298222314,
+          "log_loss": 0.0567949578370801
+        },
+        {
+          "id": "general-071",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            0.0007339065848300702,
+            0.0037163290364218902,
+            0.9955497643787481
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 3.415431746686875e-05,
+          "log_loss": 0.00446016739657462
+        }
+      ]
+    }
+  },
+  "after": {
+    "dev": {
+      "summary": {
+        "rows": 64,
+        "accuracy": 0.9375,
+        "brier": 0.10144619448748984,
+        "log_loss": 0.19028466172769976
+      },
+      "predictions": [
+        {
+          "id": "dev-revenue-00-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999737538222487,
+            1.5689384096387022e-05,
+            5.7718018537029715e-06,
+            4.784991801087375e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 9.91228463049879e-10,
+          "log_loss": 2.6246522188215756e-05
+        },
+        {
+          "id": "dev-revenue-00-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.0009107550139790695,
+            0.9987641475344219,
+            0.000216323276915604,
+            0.000108774174683318
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.415433593377059e-06,
+          "log_loss": 0.0012366167610056047
+        },
+        {
+          "id": "dev-revenue-01-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            4.5397146826103934e-05,
+            6.9618779463715184e-06,
+            8.939228231018887e-06,
+            0.9999387017469965
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 5.946754307137673e-09,
+          "log_loss": 6.130013181818419e-05
+        },
+        {
+          "id": "dev-revenue-01-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9878315211643487,
+            0.0007949406335225619,
+            0.00039972125314736935,
+            0.010973816948981382
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.0002692882432944878,
+          "log_loss": 0.012243120912632459
+        },
+        {
+          "id": "dev-revenue-02-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.00015841424081918215,
+            2.2821735186190183e-05,
+            0.9997028656895636,
+            0.00011589833443103071
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.2733712565364683e-07,
+          "log_loss": 0.0002971784635821432
+        },
+        {
+          "id": "dev-revenue-02-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.00011514003339020869,
+            3.098951957953098e-05,
+            0.006691872900971197,
+            0.993161997546059
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 9.155365806046798e-05,
+          "log_loss": 0.006861488720051204
+        },
+        {
+          "id": "dev-revenue-03-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            9.026867623136841e-05,
+            0.9997799808993063,
+            0.00011590727461183365,
+            1.3843149850597086e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 7.018296768435341e-08,
+          "log_loss": 0.0002200433084468702
+        },
+        {
+          "id": "dev-revenue-03-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0004876366238901632,
+            0.00019096124568906592,
+            0.9990603890545191,
+            0.00026101307590162634
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.2252522289732467e-06,
+          "log_loss": 0.0009400526565580471
+        },
+        {
+          "id": "dev-revenue-04-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999093916530862,
+            7.031041548418838e-05,
+            1.0782451435430852e-05,
+            9.515479994036554e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.3360232674479173e-08,
+          "log_loss": 9.061245209801058e-05
+        },
+        {
+          "id": "dev-revenue-04-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.16445261060250285,
+            0.8351592683977134,
+            0.00021819250557870274,
+            0.00016992849420500555
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.05421720441281817,
+          "log_loss": 0.1801328317238923
+        },
+        {
+          "id": "dev-revenue-05-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            4.832448856813986e-05,
+            1.0782650873300014e-05,
+            1.3006359652320031e-05,
+            0.9999278865009062
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 7.821043898177695e-09,
+          "log_loss": 7.211609939713893e-05
+        },
+        {
+          "id": "dev-revenue-05-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.5919415887144154,
+            0.0006116518458359361,
+            0.0006116518458359361,
+            0.40683510759391284
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.332027220027827,
+          "log_loss": 0.5243473166782465
+        },
+        {
+          "id": "dev-revenue-06-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            9.6093016052367e-05,
+            1.3004775544507457e-05,
+            0.9998061004193769,
+            8.480178902622568e-05
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 5.4191382708867005e-08,
+          "log_loss": 0.0001939183815771561
+        },
+        {
+          "id": "dev-revenue-06-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.0002780064924292954,
+            4.5383312322147835e-05,
+            4.2633676429169455e-05,
+            0.9996339765188195
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 2.1513807401155258e-07,
+          "log_loss": 0.0003660904841251869
+        },
+        {
+          "id": "dev-revenue-07-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            7.966955682801439e-05,
+            0.999876990383306,
+            3.3211212366217775e-05,
+            1.012884749970007e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.268418226287852e-08,
+          "log_loss": 0.00012301718299737225
+        },
+        {
+          "id": "dev-revenue-07-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0004043523994593011,
+            0.0001158489020670175,
+            0.9992764775433971,
+            0.0002033211550764566
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 7.417460683689455e-07,
+          "log_loss": 0.0007237843252950413
+        },
+        {
+          "id": "dev-identity-00-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            7.965570089618565e-05,
+            0.9997030942557578,
+            0.00020340795808311332,
+            1.3842085263039337e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 1.360644523852703e-07,
+          "log_loss": 0.000296949829479042
+        },
+        {
+          "id": "dev-identity-00-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0007549264618804361,
+            0.00023023956251753936,
+            0.9986107509591892,
+            0.0004040830164129093
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 2.7162202005427647e-06,
+          "log_loss": 0.0013902149419479954
+        },
+        {
+          "id": "dev-identity-01-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999793380734807,
+            1.3845910189160182e-05,
+            3.7265761722446663e-06,
+            3.0894401579080874e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 6.420564469113814e-10,
+          "log_loss": 2.06621399798272e-05
+        },
+        {
+          "id": "dev-identity-01-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.02930156326356841,
+            0.9703345105692833,
+            0.00021016567479802516,
+            0.00015376049235035256
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0017386906847527356,
+          "log_loss": 0.03011441067696718
+        },
+        {
+          "id": "dev-identity-02-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            4.006311639948474e-05,
+            6.961925723652662e-06,
+            7.4109313562259675e-06,
+            0.9999455640265206
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 4.67171881763995e-09,
+          "log_loss": 5.443745517080364e-05
+        },
+        {
+          "id": "dev-identity-02-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9977693790662326,
+            0.00040374255934081754,
+            0.0002300455759253033,
+            0.0015968327985012472
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 7.74147375775636e-06,
+          "log_loss": 0.002233112474453861
+        },
+        {
+          "id": "dev-identity-03-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            8.480359158591915e-05,
+            1.3005051975989485e-05,
+            0.9998273524495356,
+            7.48389069026227e-05
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 4.276881919051415e-08,
+          "log_loss": 0.00017266245576836356
+        },
+        {
+          "id": "dev-identity-03-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.00016863732459664437,
+            3.3206658088278675e-05,
+            5.827949991992186e-05,
+            0.9997398765173952
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 1.0060195570189562e-07,
+          "log_loss": 0.00026015732058611013
+        },
+        {
+          "id": "dev-identity-04-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            8.480651066573388e-05,
+            0.999861768159863,
+            4.2643391580260396e-05,
+            1.0781937890896568e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.823489490909474e-08,
+          "log_loss": 0.00013824139503830038
+        },
+        {
+          "id": "dev-identity-04-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0003798839624158944,
+            9.604970750994023e-05,
+            0.9993554938436092,
+            0.00016857248646499518
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 5.973422400321511e-07,
+          "log_loss": 0.0006447139397668312
+        },
+        {
+          "id": "dev-identity-05-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999792994760424,
+            1.3007028396190909e-05,
+            3.966919532973672e-06,
+            3.7265760284054005e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 6.273182992967041e-10,
+          "log_loss": 2.0700738216442573e-05
+        },
+        {
+          "id": "dev-identity-05-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.005217976152492921,
+            0.9943702442866954,
+            0.00024404799223674966,
+            0.00016773156857478045
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 5.9009117821081915e-05,
+          "log_loss": 0.0056456625170393585
+        },
+        {
+          "id": "dev-identity-06-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            5.144142361958087e-05,
+            6.961839635650556e-06,
+            8.39758156013964e-06,
+            0.9999331991551849
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 7.2275595191973355e-09,
+          "log_loss": 6.680307609094223e-05
+        },
+        {
+          "id": "dev-identity-06-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9043828832916317,
+            0.0001525523923088671,
+            0.00014330971009839577,
+            0.09532125460596104
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.018228818397181573,
+          "log_loss": 0.10050246479498086
+        },
+        {
+          "id": "dev-identity-07-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.00012338124414009187,
+            1.7774753495311372e-05,
+            0.9997685763558328,
+            9.026764653177245e-05
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 7.724402435737509e-08,
+          "log_loss": 0.00023145042675087402
+        },
+        {
+          "id": "dev-identity-07-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.0002610626830770408,
+            5.82509582837589e-05,
+            0.00043041959857516353,
+            0.9992502667600641
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 8.189078605387151e-07,
+          "log_loss": 0.0007500144304554489
+        },
+        {
+          "id": "dev-reliability-00-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            9.608808553860031e-05,
+            1.7774508577343087e-05,
+            0.999754800564875,
+            0.00013133684100891208
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 8.692098212946897e-08,
+          "log_loss": 0.00024522950142144003
+        },
+        {
+          "id": "dev-reliability-00-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.000379930686229963,
+            6.202197957059438e-05,
+            7.963779816193104e-05,
+            0.9994784095360376
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 4.2659284328160203e-07,
+          "log_loss": 0.0005217265395876559
+        },
+        {
+          "id": "dev-reliability-01-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.00012335337321379026,
+            0.9995427359008716,
+            0.0003149938734552366,
+            1.891685245941089e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 3.238854986562188e-07,
+          "log_loss": 0.0004573686762373476
+        },
+        {
+          "id": "dev-reliability-01-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0006260717139710442,
+            0.00012328082999599936,
+            0.9989549121187357,
+            0.0002957353372971608
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.586832023370995e-06,
+          "log_loss": 0.0010456343663872865
+        },
+        {
+          "id": "dev-reliability-02-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999637843146653,
+            2.4299951188071205e-05,
+            6.143989836466992e-06,
+            5.771744310170323e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.9731251355001028e-09,
+          "log_loss": 3.621634113850528e-05
+        },
+        {
+          "id": "dev-reliability-02-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.0010319285287069574,
+            0.9986750091266332,
+            0.00019088758384449783,
+            0.00010217476081514443
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.8673550542782267e-06,
+          "log_loss": 0.0013258694499304164
+        },
+        {
+          "id": "dev-reliability-03-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            5.144111267919085e-05,
+            8.397530800516326e-06,
+            1.3006350137553034e-05,
+            0.9999271550063829
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 8.192264836201986e-09,
+          "log_loss": 7.2847646942552e-05
+        },
+        {
+          "id": "dev-reliability-03-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9934442059583601,
+            0.0015899107798236346,
+            0.0009059038551980552,
+            0.00405997940661824
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 6.281034638122701e-05,
+          "log_loss": 0.0065773776428769085
+        },
+        {
+          "id": "dev-reliability-04-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.001017892743730594,
+            8.894247671856392e-05,
+            0.8166695559680524,
+            0.18222360881149857
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 0.06681653933363906,
+          "log_loss": 0.2025207261976684
+        },
+        {
+          "id": "dev-reliability-04-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.007565794586633189,
+            0.0002755840476731586,
+            0.0012350820144163192,
+            0.9909235393512773
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 0.00014122475978460626,
+          "log_loss": 0.00911790267287236
+        },
+        {
+          "id": "dev-reliability-05-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            7.964818275074706e-05,
+            0.99960873926078,
+            0.00029592889937693115,
+            1.5683657092419398e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.4724868965672963e-07,
+          "log_loss": 0.00039133730167429
+        },
+        {
+          "id": "dev-reliability-05-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0003568402737439635,
+            0.00014875315721554045,
+            0.9992779720023943,
+            0.00021643456664596287
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 7.176308337129498e-07,
+          "log_loss": 0.000722288785358604
+        },
+        {
+          "id": "dev-reliability-06-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9980399266327089,
+            0.0019266703044885124,
+            1.7744020060159546e-05,
+            1.5659042742489727e-05
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 7.554506123229208e-06,
+          "log_loss": 0.001961996824916687
+        },
+        {
+          "id": "dev-reliability-06-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.02031183023586312,
+            0.9786787879946112,
+            0.0003960176438841028,
+            0.0006133641256414006
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0008676975744341516,
+          "log_loss": 0.02155179243946407
+        },
+        {
+          "id": "dev-reliability-07-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            6.204906045870175e-05,
+            1.0129230671867413e-05,
+            1.3006189634170807e-05,
+            0.9999148155192353
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 1.1378243949757327e-08,
+          "log_loss": 8.518810916860506e-05
+        },
+        {
+          "id": "dev-reliability-07-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9785738756489907,
+            0.0006949581040763066,
+            0.0004215133973380432,
+            0.02030965284959499
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.0008722214438865334,
+          "log_loss": 0.021658996121103884
+        },
+        {
+          "id": "dev-developer-00-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            9.610032690506211e-05,
+            9.515220911748117e-06,
+            1.2217785496083288e-05,
+            0.9998821666666873
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 2.335978098227461e-08,
+          "log_loss": 0.00011784027620535032
+        },
+        {
+          "id": "dev-developer-00-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9895044370097192,
+            0.00048297240914975853,
+            0.00031183042427287055,
+            0.009700760156858376
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 0.00020459209066534426,
+          "log_loss": 0.010551029856877637
+        },
+        {
+          "id": "dev-developer-01-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.00011590817312884022,
+            1.6698155540705463e-05,
+            0.9997877312266147,
+            7.966244471569973e-05
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 6.511767024911522e-08,
+          "log_loss": 0.00021229130559003833
+        },
+        {
+          "id": "dev-developer-01-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.0001792508813780131,
+            4.257581616848848e-05,
+            0.0015008492544345644,
+            0.9982773240480189
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 5.254104498667834e-06,
+          "log_loss": 0.0017241614644817353
+        },
+        {
+          "id": "dev-developer-02-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            9.609605608360444e-05,
+            0.9998377306241674,
+            5.143651225435112e-05,
+            1.4736807494629547e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 3.842869061596213e-08,
+          "log_loss": 0.00016228254293223262
+        },
+        {
+          "id": "dev-developer-02-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0004043118687516605,
+            0.0001583308027353617,
+            0.9991763139662362,
+            0.00026104336227681686
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 9.351390495146344e-07,
+          "log_loss": 0.0008240254494990567
+        },
+        {
+          "id": "dev-developer-03-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999118585350631,
+            5.144032575436257e-05,
+            1.7777300890254884e-05,
+            1.8923838292191853e-05
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.1089169037581075e-08,
+          "log_loss": 8.814534962404311e-05
+        },
+        {
+          "id": "dev-developer-03-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.0024715216371389887,
+            0.9970829921621717,
+            0.0002772970425407438,
+            0.00016818915814859953
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 1.4722535171518696e-05,
+          "log_loss": 0.0029212705968772405
+        },
+        {
+          "id": "dev-developer-04-S1",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.00013134711814893858,
+            1.669891213437598e-05,
+            1.8922346452966995e-05,
+            0.9998330316232639
+          ],
+          "prediction": 3,
+          "accuracy": 1.0,
+          "brier": 4.576741313768781e-08,
+          "log_loss": 0.00016698231750734703
+        },
+        {
+          "id": "dev-developer-04-C7",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.11883998531478317,
+            0.0018044898622073817,
+            0.0012402065359821324,
+            0.8781153182870274
+          ],
+          "prediction": 3,
+          "accuracy": 0.0,
+          "brier": 1.5475342779862937,
+          "log_loss": 2.1299773519590675
+        },
+        {
+          "id": "dev-developer-05-S1",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.9922277055488641,
+            0.003578531865366004,
+            0.004055007847489831,
+            0.00013875473828014128
+          ],
+          "prediction": 0,
+          "accuracy": 0.0,
+          "brier": 1.9764350721956159,
+          "log_loss": 5.507802656154037
+        },
+        {
+          "id": "dev-developer-05-C7",
+          "primitive": "choice",
+          "gold": 3,
+          "probabilities": [
+            0.0020707916555986377,
+            0.8354169791929817,
+            0.01733852625159673,
+            0.1451737028998229
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 1.4289544400085854,
+          "log_loss": 1.9298243024991002
+        },
+        {
+          "id": "dev-developer-06-S1",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.0013054905025919174,
+            0.8157262609902386,
+            0.18201313125203178,
+            0.0009551172551376531
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.06708820739123042,
+          "log_loss": 0.20367644477157026
+        },
+        {
+          "id": "dev-developer-06-C7",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.0008785710117202021,
+            0.7048897857334971,
+            0.2938417797316166,
+            0.00038986352316605264
+          ],
+          "prediction": 1,
+          "accuracy": 0.0,
+          "brier": 0.9955299659646155,
+          "log_loss": 1.224713820683947
+        },
+        {
+          "id": "dev-developer-07-S1",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999760639455489,
+            1.3006986310682711e-05,
+            6.144065285126761e-06,
+            4.785002855298557e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 8.02762186123366e-10,
+          "log_loss": 2.3936340922979642e-05
+        },
+        {
+          "id": "dev-developer-07-C7",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.025947995502177593,
+            0.973691347765786,
+            0.00022449414821678566,
+            0.00013616258381955274
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 0.0013655125908336562,
+          "log_loss": 0.026660916971192352
+        }
+      ]
+    },
+    "retention": {
+      "summary": {
+        "rows": 24,
+        "accuracy": 1.0,
+        "brier": 5.950492848928337e-08,
+        "log_loss": 0.0001534010585653128
+      },
+      "predictions": [
+        {
+          "id": "general-048",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9997388096809043,
+            0.0002611903190957194
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.3644076557861699e-07,
+          "log_loss": 0.0002612244352277206
+        },
+        {
+          "id": "general-049",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.00010889196687725881,
+            0.9998457151078834,
+            4.539292523921935e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 3.7721806047587426e-08,
+          "log_loss": 0.00015429679525485156
+        },
+        {
+          "id": "general-050",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            2.1446747005324447e-05,
+            0.9997480273644724,
+            0.00023052588852229652
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 1.170923572908114e-07,
+          "log_loss": 0.00025200438596569794
+        },
+        {
+          "id": "general-051",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            3.763644718097441e-05,
+            0.9999623635528191
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.8330043128077777e-09,
+          "log_loss": 3.7637155449760376e-05
+        },
+        {
+          "id": "general-052",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            9.02792159676922e-05,
+            1.3005954193116087e-05,
+            0.9998967148298391
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.898731805537945e-08,
+          "log_loss": 0.00010329050444138601
+        },
+        {
+          "id": "general-053",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            2.0148613629760696e-05,
+            9.611632624066377e-05,
+            0.9998837350601297
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 2.3161851044240532e-08,
+          "log_loss": 0.0001162716991623088
+        },
+        {
+          "id": "general-054",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.999704042886487,
+            0.000295957113513077
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.751812260779661e-07,
+          "log_loss": 0.0002960009174625053
+        },
+        {
+          "id": "general-055",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999872220010748,
+            1.0783290713423834e-05,
+            1.994708211776575e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 2.8353547599234924e-10,
+          "log_loss": 1.2778080564507888e-05
+        },
+        {
+          "id": "general-056",
+          "primitive": "score",
+          "gold": 0,
+          "probabilities": [
+            0.9997392637589556,
+            0.00015843631305907123,
+            0.00010229992798534179
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.0355072795551655e-07,
+          "log_loss": 0.0002607702386478206
+        },
+        {
+          "id": "general-057",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            3.763644718097441e-05,
+            0.9999623635528191
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.8330043128077777e-09,
+          "log_loss": 3.7637155449760376e-05
+        },
+        {
+          "id": "general-058",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            9.609879889357393e-05,
+            0.9998662683707429,
+            3.7632830363605696e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.8535357733726397e-08,
+          "log_loss": 0.000133740572128754
+        },
+        {
+          "id": "general-059",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            2.1446747005324447e-05,
+            0.9997480273644724,
+            0.00023052588852229652
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 1.170923572908114e-07,
+          "log_loss": 0.00025200438596569794
+        },
+        {
+          "id": "general-060",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.9997388096809043,
+            0.0002611903190957194
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.3644076557861699e-07,
+          "log_loss": 0.0002612244352277206
+        },
+        {
+          "id": "general-061",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            9.610099918382661e-05,
+            1.4737565543600226e-05,
+            0.9998891614352724
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 2.173778531315613e-08,
+          "log_loss": 0.00011084470777524402
+        },
+        {
+          "id": "general-062",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            2.0148944713214264e-05,
+            7.968583443979788e-05,
+            0.9999001652208471
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.6722795311926207e-08,
+          "log_loss": 9.983976297614714e-05
+        },
+        {
+          "id": "general-063",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            3.535625074174431e-05,
+            0.9999646437492582
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 2.5001289330303118e-09,
+          "log_loss": 3.5356875788768775e-05
+        },
+        {
+          "id": "general-064",
+          "primitive": "choice",
+          "gold": 0,
+          "probabilities": [
+            0.9999865265479453,
+            1.1478745230303233e-05,
+            1.9947068245327807e-06
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 3.1727435764869854e-10,
+          "log_loss": 1.3473542822483504e-05
+        },
+        {
+          "id": "general-065",
+          "primitive": "score",
+          "gold": 0,
+          "probabilities": [
+            0.9997512716470914,
+            0.0001584437260657767,
+            9.028462684290354e-05
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 9.512152171437793e-08,
+          "log_loss": 0.0002487592909355534
+        },
+        {
+          "id": "general-066",
+          "primitive": "noul",
+          "gold": 0,
+          "probabilities": [
+            0.999704042886487,
+            0.000295957113513077
+          ],
+          "prediction": 0,
+          "accuracy": 1.0,
+          "brier": 1.751812260779661e-07,
+          "log_loss": 0.0002960009174625053
+        },
+        {
+          "id": "general-067",
+          "primitive": "choice",
+          "gold": 1,
+          "probabilities": [
+            0.0001313450409255497,
+            0.9998172195020119,
+            5.14354570625397e-05
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 5.3305836463760685e-08,
+          "log_loss": 0.0001827972043791326
+        },
+        {
+          "id": "general-068",
+          "primitive": "score",
+          "gold": 1,
+          "probabilities": [
+            2.282986822716522e-05,
+            0.9997466445621026,
+            0.00023052556967020956
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 1.1785221906722549e-07,
+          "log_loss": 0.00025338753780825755
+        },
+        {
+          "id": "general-069",
+          "primitive": "noul",
+          "gold": 1,
+          "probabilities": [
+            4.5397868702434395e-05,
+            0.9999546021312976
+          ],
+          "prediction": 1,
+          "accuracy": 1.0,
+          "brier": 4.121932965442948e-09,
+          "log_loss": 4.539889921682063e-05
+        },
+        {
+          "id": "general-070",
+          "primitive": "choice",
+          "gold": 2,
+          "probabilities": [
+            0.00010229834708434505,
+            1.4737474201001231e-05,
+            0.9998829641787145
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 2.437952842599215e-08,
+          "log_loss": 0.00011704267051166755
+        },
+        {
+          "id": "general-071",
+          "primitive": "score",
+          "gold": 2,
+          "probabilities": [
+            2.014964536554306e-05,
+            7.968860540702554e-05,
+            0.9999001617492275
+          ],
+          "prediction": 2,
+          "accuracy": 1.0,
+          "brier": 1.6723958357392878e-08,
+          "log_loss": 9.984323494243457e-05
+        }
+      ]
+    }
+  },
+  "calibration": "uncalibrated; not an accuracy guarantee",
+  "delta": {
+    "dev": {
+      "accuracy": 0.5,
+      "brier": -0.7093214120135248,
+      "log_loss": -1.3576463447698317
+    },
+    "retention": {
+      "accuracy": 0.0,
+      "brier": -0.0125055673854674,
+      "log_loss": -0.0430110045070552
+    }
+  },
+  "retention_warning": false,
+  "retention_note": "Small authored smoke panel, not a general capability guarantee; evaluate your own held-out domains."
+}

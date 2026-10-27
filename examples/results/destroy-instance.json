@@ -1,0 +1,13 @@
+{
+  "receipt_type": "local-verification",
+  "instance_id": "redacted-mechanical-smoke",
+  "command": "vastai destroy instance [ID REDACTED] --yes --raw",
+  "command_exit_code": 0,
+  "provider_stdout": "",
+  "instances_after_file": "instances-after.json",
+  "instances_after": [],
+  "displayed_charges_usd": 0.619,
+  "billing_file": "billing.json",
+  "billing_note": "Sum of displayed charges captured after destruction; not a promise about delayed provider accounting.",
+  "artifact_retrieval_verified_before_destruction": "retrieval.json"
+}

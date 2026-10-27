@@ -1,0 +1,23 @@
+OpenChoice-9B NOTICE
+
+Code in this repository is licensed under Apache-2.0; see LICENSE.
+
+Base model: Qwen/Qwen3.5-9B, © Alibaba Cloud, Apache-2.0. The base model and its license are separate from this code repository.
+
+Inference runtime: llama.cpp (https://github.com/ggml-org/llama.cpp), MIT License, pinned to 4364bf7232e65c34eca8d9500c5464389662de6b. The build script downloads its source and retains its license; this repository does not distribute precompiled runtime libraries.
+
+Training-source attribution and maintainer-recorded terms:
+- NVIDIA Aegis AI Content Safety Dataset 2.0 (human prompt labels only; CC-BY-4.0): https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0
+- BoolQ (CC-BY-SA-3.0): https://huggingface.co/datasets/google/boolq
+- NVIDIA HelpSteer2 (human attribute ratings; responses are model-generated; CC-BY-4.0): https://huggingface.co/datasets/nvidia/HelpSteer2
+- Stanford SNLI (human entailment annotations; CC-BY-SA-4.0): https://huggingface.co/datasets/stanfordnlp/snli
+- 400 OpenChoice-owned replay rows: internally authored project material; no public license asserted.
+
+Published comparator scores in README.md and RESULTS.md are cited from:
+- JevBench v1.5.1 aggregate by Benchmark Heaven (https://benchmarkheaven.com/api/jevbench/v1.5.1, retrieved 2026-09-29; snapshot in results/benchmarkheaven-v1.5.1.json) and the developer model cards linked in README.md.
+- JevBench (https://github.com/fstandhartinger/jevbench, MIT License), v1.2.8 per-task outcomes and v1.4.2.2 results, for historical tables in RESULTS.md.
+- Bespoke Nimble (https://huggingface.co/bespokelabs/Bespoke-Nimble-9B and its public benchmark artifacts).
+
+Evaluation-only attribution: SciQ, Johannes Welbl, Nelson F. Liu and Matt Gardner, "Crowdsourcing Multiple Choice Science Questions" (2017), https://arxiv.org/abs/1707.06209; dataset https://huggingface.co/datasets/allenai/sciq (CC-BY-NC-3.0 according to its card). SciQ was not used in project fine-tuning. Raw benchmark input text is not included in this release.
+
+The model weights have a separate CC-BY-SA-4.0 declaration in the Hugging Face package (https://huggingface.co/lutr0/OpenChoice-9B). Attribution here is not a grant or legal conclusion about dataset rights in derived weights. See PUBLISHING.md.

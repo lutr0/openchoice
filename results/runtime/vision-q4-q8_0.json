@@ -1,0 +1,119 @@
+{
+  "variant": "vision-q4-q8_0",
+  "runtime": "llama",
+  "rows": 60,
+  "threads": 12,
+  "load_seconds": 5.824036490999788,
+  "uptime_before": "15:42:55 up  2:48,  1 user,  load average: 12.57, 13.58, 12.60",
+  "mmproj": "mmproj-q8_0.gguf",
+  "mmproj_bytes": 624229216,
+  "mrope": true,
+  "memory_after_load": {
+    "peak_rss_bytes": 7075536896,
+    "peak_anonymous_bytes": 1336676352
+  },
+  "peak_rss_bytes": 7201857536,
+  "peak_anonymous_bytes": 1477795840,
+  "uptime_after": "15:57:59 up  3:04,  1 user,  load average: 16.21, 14.32, 13.56",
+  "vs_gpu_nf4": {
+    "all": {
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "agreement": 0.9166666666666666,
+      "reference_accuracy": 0.8666666666666667,
+      "mean_abs_probability_diff": 0.019291511031960945,
+      "max_abs_probability_diff": 0.17093837624747976,
+      "mean_decision_seconds": 14.952795862850023,
+      "median_decision_seconds": 14.415025408000474,
+      "mean_image_encode_seconds_per_decision": 7.884652128666667,
+      "mean_decode_seconds_per_decision": 7.031490482616666,
+      "mean_image_encode_seconds_per_forward": 2.252757751047619,
+      "mean_decode_seconds_per_forward": 2.0089972807476193
+    },
+    "choice": {
+      "n": 30,
+      "correct": 30,
+      "accuracy": 1,
+      "agreement": 1,
+      "reference_accuracy": 1,
+      "mean_abs_probability_diff": 0.0029117741055220484,
+      "max_abs_probability_diff": 0.08818693803783662,
+      "mean_decision_seconds": 4.161354982966744,
+      "median_decision_seconds": 4.135682150500543,
+      "mean_image_encode_seconds_per_decision": 2.1661944484,
+      "mean_decode_seconds_per_decision": 1.9849774998,
+      "mean_image_encode_seconds_per_forward": 2.1661944483999998,
+      "mean_decode_seconds_per_forward": 1.9849774997999998
+    },
+    "score": {
+      "n": 30,
+      "correct": 19,
+      "accuracy": 0.6333333333333333,
+      "agreement": 0.8333333333333334,
+      "reference_accuracy": 0.7333333333333333,
+      "mean_abs_probability_diff": 0.032941291803993356,
+      "max_abs_probability_diff": 0.17093837624747976,
+      "mean_decision_seconds": 25.7442367427333,
+      "median_decision_seconds": 25.257741154499854,
+      "mean_image_encode_seconds_per_decision": 13.603109808933333,
+      "mean_decode_seconds_per_decision": 12.078003465433333,
+      "mean_image_encode_seconds_per_forward": 2.2671849681555556,
+      "mean_decode_seconds_per_forward": 2.013000577572222
+    }
+  },
+  "token_audit": {
+    "forwards": 210,
+    "all_expanded_token_ids_match": true,
+    "all_text_token_ids_match": true,
+    "all_image_counts_match": true,
+    "mismatches": []
+  },
+  "vs_cpu_bf16": {
+    "all": {
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "agreement": 0.9666666666666667,
+      "reference_accuracy": 0.7833333333333333,
+      "mean_abs_probability_diff": 0.013085864798146276,
+      "max_abs_probability_diff": 0.13074269070497202,
+      "mean_decision_seconds": 14.952795862850023,
+      "median_decision_seconds": 14.415025408000474,
+      "mean_image_encode_seconds_per_decision": 7.884652128666667,
+      "mean_decode_seconds_per_decision": 7.031490482616666,
+      "mean_image_encode_seconds_per_forward": 2.252757751047619,
+      "mean_decode_seconds_per_forward": 2.0089972807476193
+    },
+    "choice": {
+      "n": 30,
+      "correct": 30,
+      "accuracy": 1,
+      "agreement": 1,
+      "reference_accuracy": 1,
+      "mean_abs_probability_diff": 0.0019713938637795285,
+      "max_abs_probability_diff": 0.06371007956347186,
+      "mean_decision_seconds": 4.161354982966744,
+      "median_decision_seconds": 4.135682150500543,
+      "mean_image_encode_seconds_per_decision": 2.1661944484,
+      "mean_decode_seconds_per_decision": 1.9849774998,
+      "mean_image_encode_seconds_per_forward": 2.1661944483999998,
+      "mean_decode_seconds_per_forward": 1.9849774997999998
+    },
+    "score": {
+      "n": 30,
+      "correct": 19,
+      "accuracy": 0.6333333333333333,
+      "agreement": 0.9333333333333333,
+      "reference_accuracy": 0.5666666666666667,
+      "mean_abs_probability_diff": 0.022347923910118566,
+      "max_abs_probability_diff": 0.13074269070497202,
+      "mean_decision_seconds": 25.7442367427333,
+      "median_decision_seconds": 25.257741154499854,
+      "mean_image_encode_seconds_per_decision": 13.603109808933333,
+      "mean_decode_seconds_per_decision": 12.078003465433333,
+      "mean_image_encode_seconds_per_forward": 2.2671849681555556,
+      "mean_decode_seconds_per_forward": 2.013000577572222
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "openchoice-finetune-run-v1",
+  "steps": 1,
+  "updates_this_invocation": 1,
+  "elapsed_seconds": 14.197592202574015,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "peak_allocated_gib": 18.350111961364746,
+  "peak_reserved_gib": 18.53125,
+  "mode": "lora-bfloat16",
+  "contract": {
+    "data_sha256": "37e4d5ce38b359c3366ece4800a92a6203cfe6a7a19e1078255d27eacae8080a",
+    "replay_sha256": "708d8d62e37b875632b27012a4500d30bb86e9226d59b3e022d1f2366540fdac",
+    "seed": 42,
+    "batch_size": 4,
+    "lr": 1e-05,
+    "replay_fraction": 0.2,
+    "qlora": false,
+    "initialize": "base"
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.0009860065274551744,
+      "tokens": 658,
+      "elapsed_seconds": 12.2448367215693
+    }
+  ],
+  "model_sha256": "f0d60c3b17d8857020a6ff8f9ceca14f68a450cea97d6d33bd106cda07b2a925"
+}
